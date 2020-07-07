@@ -3,8 +3,8 @@
 
   inputs = {
     nixpkgs = { url = "github:nixos/nixpkgs/nixos-unstable"; };
-    #mozilla  = { url = "github:mozilla/nixpkgs-mozilla";     flake = false; };
-    mozilla  = { type="path"; path="/home/cole/code/overlays/nixpkgs-mozilla"; flake=false;};
+    #mozilla  = { url = "github:mozilla/nixpkgs-mozilla"; flake = false; };
+    mozilla  = { url = "github:colemickens/nixpkgs-mozilla"; flake = false; };
   };
 
   outputs = inputs:
