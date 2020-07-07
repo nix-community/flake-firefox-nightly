@@ -10,8 +10,8 @@ nix flake --experimental-features 'nix-command flakes' \
     --update-input mozilla
 
 nix --experimental-features 'nix-command flakes' \
-  eval --impure '.#latest' \
-    > latest.nix
+  eval --impure '.#latest' --json \
+    | jq > latest.json
 
 nix --experimental-features 'nix-command flakes' \
   build

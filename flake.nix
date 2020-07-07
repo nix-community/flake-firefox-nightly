@@ -9,7 +9,7 @@
 
   outputs = inputs:
     let
-      metadata = import ./latest.nix;
+      metadata = builtins.fromJSON (builtins.readFile ./latest.json);
       
       nameValuePair = name: value: { inherit name value; };
       genAttrs = names: f: builtins.listToAttrs (map (n: nameValuePair n (f n)) names);
