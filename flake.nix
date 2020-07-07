@@ -18,23 +18,21 @@
       pkgsFor = pkgs: system:
         import pkgs {
           inherit system;
-          config = {
-            allowUnfree = true;
-          };
-          overlays = [
-            (import "${inputs.mozilla}/firefox-overlay.nix")
-          ];
+          config.allowUnfree = true;
+          overlays = [ (import "${inputs.mozilla}/firefox-overlay.nix") ];
         };
 
-      curSysPkgs = (pkgsFor inputs.nixpkgs builtins.currentSystem);
-
+      # <impure>
+      sysPkgs = (pkgsFor inputs.nixpkgs builtins.currentSystem);
       version = {
         name = "Firefox Nightly";
-        version = curSysPkgs.lib.firefoxOverlay.firefox_versions.FIREFOX_NIGHTLY;
+        version = sysPkgs.lib.firefoxOverlay.firefox_versions.FIREFOX_NIGHTLY;
         release = false;
       };
+      # </impure>
       
     in rec {
+      # <impure>
       # this is to be evaluated impurely so that nixpkgs-mozilla
       # can hit the network and determine latest version and hashes
       latest =
@@ -42,7 +40,9 @@
           pkgs = pkgsFor inputs.nixpkgs builtins.currentSystem;
           versionInfo = pkgs.lib.firefoxOverlay.versionInfo version;
         in { inherit version versionInfo; };
+      # </impure>
 
+      # otoh, this is pure.
       # this is expected to be pulled in via flake to user config repos
       # this uses all static imports, so it evaluates purely.
       # this effectively "pins" a nightly version, so users are expected to update
@@ -51,7 +51,6 @@
         let
           pkgs = (pkgsFor inputs.nixpkgs system);
           # TODO: do this for all attributes of nixpkgs-mozilla's overlay
-          # ()
           firefox-nightly-bin =
             pkgs.lib.firefoxOverlay.firefoxVersion {
               version = metadata.version;

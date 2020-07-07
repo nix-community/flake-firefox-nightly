@@ -13,3 +13,8 @@ This flake will hopefully have CI.
 
 You must `--update-input` this flake often to get newer nightly versions,
 for the sake of security updates, etc.
+
+## TODO
+
+1. better docs
+2. 
