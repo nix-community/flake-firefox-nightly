@@ -9,7 +9,9 @@ nix flake --experimental-features 'nix-command flakes' \
     --update-input nixpkgs \
     --update-input mozilla
 
-nix --experimental-features 'nix-command flakes' eval --impure '.#latest' \
-  > latest.nix
+nix --experimental-features 'nix-command flakes' \
+  eval --impure '.#latest' \
+    > latest.nix
 
-nix --experimental-features 'nix-command flakes' build
+nix --experimental-features 'nix-command flakes' \
+  build
