@@ -1,0 +1,40 @@
+{
+  "nodes": {
+    "mozilla": {
+      "flake": false,
+      "locked": {
+        "narHash": "sha256-TDCONzuZsqmG8lE3R6zIdA35L4Bbz7VEBPZprL6Mo7s=",
+        "path": "/home/cole/code/overlays/nixpkgs-mozilla",
+        "type": "path"
+      },
+      "original": {
+        "path": "/home/cole/code/overlays/nixpkgs-mozilla",
+        "type": "path"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1593886469,
+        "narHash": "sha256-it7gY5BmUcDr09dUsE6VPnUsSCeBUtU/GfUwqs6twDc=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "dc80d7bc4a244120b3d766746c41c0d9c5f81dfa",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "mozilla": "mozilla",
+        "nixpkgs": "nixpkgs"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
