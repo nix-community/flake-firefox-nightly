@@ -8,6 +8,10 @@ otherwise is not so possbile)
 
 # NOTE
 
+Requires: https://github.com/mozilla/nixpkgs-mozilla/pull/230
+
+# NOTE
+
 This effectively pins `firefox-nightly-bin` to what this flake publishes.
 This flake will hopefully have CI.
 
