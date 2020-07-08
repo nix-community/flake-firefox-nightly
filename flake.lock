@@ -3,13 +3,17 @@
     "mozilla": {
       "flake": false,
       "locked": {
-        "narHash": "sha256-oNjO5YSV9ce7LWTuxy2pMgq54LvcVLeTbk8Wq2aaL1k=",
-        "path": "/home/cole/code/overlays/nixpkgs-mozilla",
-        "type": "path"
+        "lastModified": 1594234106,
+        "narHash": "sha256-QTsVwkaQkVJxSgj9lZCF1k4febWI0QGaQ+Uq6uGHL6M=",
+        "owner": "colemickens",
+        "repo": "nixpkgs-mozilla",
+        "rev": "a58ce094b4340a0bcc7c1de3f9feacc8b77fcaed",
+        "type": "github"
       },
       "original": {
-        "path": "/home/cole/code/overlays/nixpkgs-mozilla",
-        "type": "path"
+        "owner": "colemickens",
+        "repo": "nixpkgs-mozilla",
+        "type": "github"
       }
     },
     "nixpkgs": {
