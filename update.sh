@@ -4,13 +4,7 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 set -euo pipefail
 set -x
 
-## TODO(CI): add local shell.nix
-## copy .ci dir
-## form commit msg
-
-#"chksum": "",
 oldversion="$(cat latest.json | jq -r '.cachedInfo.chksum' |  grep -Eo '[0-9]{4}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}')"
-
 rm -rf ./.ci/commit-message
 
 nix flake --experimental-features 'nix-command flakes' \
