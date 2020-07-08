@@ -22,12 +22,14 @@ nix --experimental-features 'nix-command flakes' \
   eval --impure '.#latest' --json \
     | jq > latest.json
 
-nix --experimental-features 'nix-command flakes' \
-  build
-
 newversion="$(cat latest.json | jq -r '.cachedInfo.chksum' |  grep -Eo '[0-9]{4}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}')"
 
 if [[ "${newversion}" != "${oldversion}" ]]; then
-  commitmsg="auto-updates: firefox-nightly-bin: ${oldversion} -> ${newversion}"
+  nix --experimental-features 'nix-command flakes' \
+    build
+
+  commitmsg="firefox-nightly-bin: ${oldversion} -> ${newversion}"
   echo -e "${commitmsg}" > .ci/commit-message
+else
+  echo "nothing to do, there was no version bump"
 fi
