@@ -2,6 +2,11 @@
 set -euo pipefail
 set -x
 
+if [[ ! -f ./commit-message ]]; then
+  echo "nothing to push"
+  exit 0
+fi
+
 ssh-keyscan github.com >> ${HOME}/.ssh/known_hosts
 
 git status
