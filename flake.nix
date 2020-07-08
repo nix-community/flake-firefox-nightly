@@ -3,7 +3,6 @@
 
   inputs = {
     nixpkgs = { url = "github:nixos/nixpkgs/nixos-unstable"; };
-    #mozilla  = { url = "github:mozilla/nixpkgs-mozilla"; flake = false; };
     mozilla  = { url = "github:colemickens/nixpkgs-mozilla"; flake = false; };
   };
 
@@ -38,8 +37,8 @@
       latest =
         let
           pkgs = pkgsFor inputs.nixpkgs builtins.currentSystem;
-          versionInfo = pkgs.lib.firefoxOverlay.versionInfo version;
-        in { inherit version versionInfo; };
+          cachedInfo = pkgs.lib.firefoxOverlay.versionInfo version;
+        in { inherit version cachedInfo; };
       # </impure>
 
       # otoh, this is pure.
@@ -50,14 +49,15 @@
       defaultPackage = forAllSystems (system:
         let
           pkgs = (pkgsFor inputs.nixpkgs system);
-          # TODO: do this for all attributes of nixpkgs-mozilla's overlay
-          firefox-nightly-bin =
-            pkgs.lib.firefoxOverlay.firefoxVersion {
-              version = metadata.version;
-              versionInfoStatic = metadata.versionInfo;
-            };
         in
-          firefox-nightly-bin
+        #{
+          # TODO: do this for all attributes of nixpkgs-mozilla's overlay
+
+          #firefox-nightly-bin = 
+            pkgs.lib.firefoxOverlay.firefoxVersion {
+              version = metadata.version // { info = metadata.cachedInfo; };
+            } #;
+        #}
       );
     };
 }
