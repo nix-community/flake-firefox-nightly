@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+set -euo pipefail
+set -x
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+
+# user-specific
+SECRET_NAME="cole.mickens@gmail.com/meta.sr.ht"
+SECRET_ATTR="pat"
+
+# less user-specific
+BUILD_HOST="https://builds.sr.ht"
+if which gopass ; then
+  TOKEN="$(gopass show "${SECRET_NAME}" | grep "${SECRET_ATTR}" | cut -d' ' -f2)"
+else
+  TOKEN="$(cat "/home/cole/.srht-token")"
+fi
+
+DATA="$(mktemp)"
+MANIFEST="$(jq -aRs . <"${DIR}/srht-job.yaml")"
+echo "{ \"tags\": [ \"flake-firefox-nightly\" ], \"manifest\": ${MANIFEST} }" > "${DATA}"
+
+curl \
+  -H "Authorization:token ${TOKEN}" \
+  -H "Content-Type: application/json" \
+  -d "@${DATA}" \
+  "${BUILD_HOST}/api/jobs"
