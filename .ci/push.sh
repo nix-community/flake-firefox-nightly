@@ -2,7 +2,7 @@
 set -euo pipefail
 set -x
 
-if [[ ! -f ./commit-message ]]; then
+if [[ ! -f ./.ci/commit-message ]]; then
   echo "nothing to push"
   exit 0
 fi

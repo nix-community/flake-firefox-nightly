@@ -2,7 +2,6 @@
 
 [![builds.sr.ht status](https://builds.sr.ht/~colemickens/flake-firefox-nightly.svg)](https://builds.sr.ht/~colemickens/flake-firefox-nightly?)
 
-
 This is a nix flake that lets you import `firefoxNightly` via flake
 in a pinned, safely reproducible manner.
 
