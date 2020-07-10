@@ -25,7 +25,7 @@
       # impure, but that's by design
       sysPkgs = (pkgsFor inputs.nixpkgs builtins.currentSystem);
       version = {
-        name = "Firefox Nightly1";
+        name = "Firefox Nightly";
         version = sysPkgs.lib.firefoxOverlay.firefox_versions.FIREFOX_NIGHTLY;
         release = false;
       };
