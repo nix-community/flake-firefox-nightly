@@ -4,6 +4,7 @@
   # TODO: should warn whenever flakes are resolved to different versions (names of flakes should match repo names?)
   inputs = {
     nixpkgs = { url = "github:nixos/nixpkgs/nixos-unstable"; };
+    cachixpkgs = { url = "github:nixos/nixpkgs/nixos-20.03"; };
     mozilla = { url = "github:colemickens/nixpkgs-mozilla"; flake = false; };
   };
 
@@ -42,8 +43,16 @@
         (pkgsFor inputs.nixpkgs system).mkShell {
           nativeBuildInputs = with (pkgsFor inputs.nixpkgs system); [
             nixFlakes bash cacert curl git jq openssh ripgrep
+            (pkgsFor inputs.cachixpkgs system).cachix
           ];
         }
+      );
+
+      packages = forAllSystems (system:
+        let
+          nixpkgs_ = (pkgsFor inputs.nixpkgs system);
+          attrValues = inputs.nixpkgs.lib.attrValues;
+        in (variants system)
       );
 
       latest =
