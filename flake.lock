@@ -1,21 +1,5 @@
 {
   "nodes": {
-    "master": {
-      "locked": {
-        "lastModified": 1594236644,
-        "narHash": "sha256-6wx0pQISvhmTv1Xoiui5ZRGjY2+8KOKw7fYylZu5aLY=",
-        "owner": "nixos",
-        "repo": "nixpkgs",
-        "rev": "bddf762cf59282ad707a1687080f6f84db96bfae",
-        "type": "github"
-      },
-      "original": {
-        "owner": "nixos",
-        "ref": "master",
-        "repo": "nixpkgs",
-        "type": "github"
-      }
-    },
     "mozilla": {
       "flake": false,
       "locked": {
@@ -50,7 +34,6 @@
     },
     "root": {
       "inputs": {
-        "master": "master",
         "mozilla": "mozilla",
         "nixpkgs": "nixpkgs"
       }

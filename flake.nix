@@ -1,9 +1,9 @@
 {
   description = "firefox-nightly";
 
+  # TODO: should warn whenever flakes are resolved to different versions (names of flakes should match repo names?)
   inputs = {
     nixpkgs = { url = "github:nixos/nixpkgs/nixos-unstable"; };
-    master = { url = "github:nixos/nixpkgs/master"; }; # (for nixFlakes)
     mozilla = { url = "github:colemickens/nixpkgs-mozilla"; flake = false; };
   };
 
@@ -29,20 +29,19 @@
         version = sysPkgs.lib.firefoxOverlay.firefox_versions.FIREFOX_NIGHTLY;
         release = false;
       };
+
+      variants = system: {
+        firefox-nightly-bin =
+          (pkgsFor inputs.nixpkgs system).lib.firefoxOverlay.firefoxVersion (
+            metadata.version // { info = metadata.cachedInfo; }
+          );
+      };
     in
     rec {
       devShell = forAllSystems (system:
         (pkgsFor inputs.nixpkgs system).mkShell {
           nativeBuildInputs = with (pkgsFor inputs.nixpkgs system); [
-            # TODO: "legacy" packages, why?
-            (pkgsFor inputs.master system).nixFlakes
-            bash
-            cacert
-            curl
-            git
-            jq
-            openssh
-            ripgrep
+            nixFlakes bash cacert curl git jq openssh ripgrep
           ];
         }
       );
@@ -55,9 +54,14 @@
         { inherit version cachedInfo; };
 
       defaultPackage = forAllSystems (system:
-        (pkgsFor inputs.nixpkgs system).lib.firefoxOverlay.firefoxVersion (
-          metadata.version // { info = metadata.cachedInfo; }
-        )
+        let
+          nixpkgs_ = (pkgsFor inputs.nixpkgs system);
+          attrValues = inputs.nixpkgs.lib.attrValues;
+        in
+        nixpkgs_.symlinkJoin {
+          name = "flake-firefox-nightly";
+          paths = attrValues (variants system);
+        }
       );
     };
 }
