@@ -18,10 +18,12 @@ nix --experimental-features 'nix-command flakes' \
 
 newversion="$(cat latest.json | jq -r '.cachedInfo.chksum' |  grep -Eo '[0-9]{4}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}')"
 
-if [[ "${newversion}" != "${oldversion}" ]]; then
-  nix --experimental-features 'nix-command flakes' \
-    build
+nix --experimental-features 'nix-command flakes' \
+  build
 
+readlink -f result | cachix push nixpkgs-wayland
+
+if [[ "${newversion}" != "${oldversion}" ]]; then
   commitmsg="firefox-nightly-bin: ${oldversion} -> ${newversion}"
   echo -e "${commitmsg}" > .ci/commit-message
 else
