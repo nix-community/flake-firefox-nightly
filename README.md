@@ -1,5 +1,10 @@
 # flake-firefox-nightly
 
+## this is experimental
+## - the flake's outputs may change
+## - the repo will be renamed
+## you have been warned
+
 [![builds.sr.ht status](https://builds.sr.ht/~colemickens/flake-firefox-nightly.svg)](https://builds.sr.ht/~colemickens/flake-firefox-nightly?)
 
 This is a nix flake that lets you import `firefoxNightly` via flake
@@ -8,12 +13,17 @@ in a pinned, safely reproducible manner.
 (put another way, this allows flakes --pure-eval + firefox-nightly, which
 otherwise is not so possbile)
 
+# Packages
+
+* `firefox-nightly-bin`: pinned version from `nixpkgs-mozilla`
+
+* `firefox-pipewire`: `nixpkgs.firefox` with Fedora's `pipewire-0.3` patch applied, courtesy of [@calbrecht](https://github.com/calbrecht/nixpkgs-overlays).
+
 # Warnings
 
 1. This uses my fork of nixpkgs-mozilla, pending this PR: https://github.com/mozilla/nixpkgs-mozilla/pull/230
 
-2. The structures of outputs of the flake may change when I update to export more of the
-   firefox-overlay ouputs. (a breaking change for users potentially)
+2. See the big warnings at the top.
 
 # Security Warning
 
