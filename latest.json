@@ -1,11 +1,11 @@
 {
   "cachedInfo": {
-    "chksum": "https://archive.mozilla.org/pub/firefox/nightly/2020/07/2020-07-31-09-46-06-mozilla-central/firefox-81.0a1.en-US.linux-x86_64.checksums",
+    "chksum": "https://archive.mozilla.org/pub/firefox/nightly/2020/08/2020-08-01-09-48-10-mozilla-central/firefox-81.0a1.en-US.linux-x86_64.checksums",
     "chksumSig": null,
-    "sha512": "a962ce70dada3e184f386c7af2c1b3740a29ee1408704dbd5ef169b920e2bcf4a2c02c9a5ecf757cd020d8c70e52d4aedf6aabce4d7ab729b7f632b4f6a65561",
-    "sig": "https://archive.mozilla.org/pub/firefox/nightly/2020/07/2020-07-31-09-46-06-mozilla-central/firefox-81.0a1.en-US.linux-x86_64.tar.bz2.asc",
-    "sigSha512": "99405a83ed04ca3335905f30198199b8908fb1da3f22a8674fb247f2b295d264a8ac27988d71bd4517eb505209292b59f13c85bb6ec229f6e8de4546f9671276",
-    "url": "https://archive.mozilla.org/pub/firefox/nightly/2020/07/2020-07-31-09-46-06-mozilla-central/firefox-81.0a1.en-US.linux-x86_64.tar.bz2"
+    "sha512": "9d05f194b457049147fb7cfb46cdd742ac0c724a1e53edf5bba89ded6498f281492c14d9e5ed59ea9de9242d462387d9699f6738d9e1d199f4c67a5ac2421e85",
+    "sig": "https://archive.mozilla.org/pub/firefox/nightly/2020/08/2020-08-01-09-48-10-mozilla-central/firefox-81.0a1.en-US.linux-x86_64.tar.bz2.asc",
+    "sigSha512": "8bddacc1db0872bb9aeca0915eb6db413032b867c13fb367cce645ab14917faa016e3ed03826a0b16b11e0960bcf8af80abe9faadf45c07d0dcadbf4a3f3376a",
+    "url": "https://archive.mozilla.org/pub/firefox/nightly/2020/08/2020-08-01-09-48-10-mozilla-central/firefox-81.0a1.en-US.linux-x86_64.tar.bz2"
   },
   "version": {
     "name": "Firefox Nightly",
