@@ -1,5 +1,5 @@
 {
-  description = "firefox-apps";
+  description = "firefox-nightly";
 
   # TODO: should warn whenever flakes are resolved to different versions (names of flakes should match repo names?)
   inputs = {
@@ -36,22 +36,7 @@
           (pkgsFor inputs.nixpkgs system).lib.firefoxOverlay.firefoxVersion (
             metadata.version // { info = metadata.cachedInfo; }
           );
-
-        firefox-pipewire =
-          let pkgs = (pkgsFor inputs.nixpkgs system); in
-          pkgs.firefoxPackages.firefox.overrideAttrs (old: rec {
-            buildInputs = old.buildInputs ++ [ pkgs.pipewire ];
-            patches = old.patches ++ [(pkgs.fetchpatch {
-              url = "https://src.fedoraproject.org/rpms/firefox/raw/e99b683a352cf5b2c9ff198756859bae408b5d9d/f/firefox-pipewire-0-3.patch";
-              sha256 = "0qc62di5823r7ly2lxkclzj9rhg2z7ms81igz44nv0fzv3dszdab";
-            })];
-            postPatch = ''
-              substituteInPlace media/webrtc/trunk/webrtc/modules/desktop_capture/desktop_capture_generic_gn/moz.build \
-              --replace /usr/include ${pkgs.pipewire.dev}/include
-            '' + old.postPatch;
-          });
-        };
-
+      };
     in
     rec {
       devShell = forAllSystems (system:
@@ -83,7 +68,7 @@
           attrValues = inputs.nixpkgs.lib.attrValues;
         in
         nixpkgs_.symlinkJoin {
-          name = "flake-firefox-apps";
+          name = "flake-firefox-nightly";
           paths = attrValues (variants system);
         }
       );
