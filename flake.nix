@@ -3,9 +3,11 @@
 
   # TODO: should warn whenever flakes are resolved to different versions (names of flakes should match repo names?)
   inputs = {
+    master = { url = "github:nixos/nixpkgs/master"; };
     nixpkgs = { url = "github:nixos/nixpkgs/nixos-unstable"; };
     cachixpkgs = { url = "github:nixos/nixpkgs/nixos-20.03"; };
     mozilla = { url = "github:colemickens/nixpkgs-mozilla"; flake = false; };
+    flake-utils = { url = "github:numtide/flake-utils"; }; # TODO: adopt this
   };
 
   outputs = inputs:
@@ -39,11 +41,18 @@
       };
     in
     rec {
-      devShell = forAllSystems (system:
-        (pkgsFor inputs.nixpkgs system).mkShell {
-          nativeBuildInputs = with (pkgsFor inputs.nixpkgs system); [
-            nixFlakes bash cacert curl git jq openssh ripgrep
-            (pkgsFor inputs.cachixpkgs system).cachix
+      devShell =
+       forAllSystems (system:
+        let 
+          master_ = pkgsFor inputs.master system;
+          nixpkgs_ = pkgsFor inputs.nixpkgs system;
+          cachixpkgs_ = pkgsFor inputs.cachixpkgs system;
+        in nixpkgs_.mkShell {
+          nativeBuildInputs = with nixpkgs_; [
+            bash cacert curl git jq openssh ripgrep
+            cachixpkgs_.cachix
+            master_.nixFlakes
+            master_.nix-build-uncached
           ];
         }
       );
