@@ -12,7 +12,31 @@
 
   outputs = inputs:
     let
-      metadata = builtins.fromJSON (builtins.readFile ./latest.json);
+      fv = system: {
+        # TODO: move to nixpkgs-mozilla and de-dupe
+        firefox-nightly-bin = {
+          name = "Firefox Nightly";
+          version = (pkgsFor inputs.nixpkgs system).lib.firefoxOverlay.firefox_versions.FIREFOX_NIGHTLY;
+          release = false;
+        };
+        firefox-beta-bin = {
+          name = "Firefox Beta";
+          version = (pkgsFor inputs.nixpkgs system).lib.firefoxOverlay.firefox_versions.LATEST_FIREFOX_DEVEL_VERSION;
+          release = true;
+        };
+        firefox-bin = {
+          name = "Firefox";
+          version = (pkgsFor inputs.nixpkgs system).lib.firefoxOverlay.firefox_versions.LATEST_FIREFOX_VERSION;
+          release = true;
+        };
+        firefox-esr-bin = {
+          name = "Firefox Esr";
+          version = (pkgsFor inputs.nixpkgs system).lib.firefoxOverlay.firefox_versions.FIREFOX_ESR;
+          release = true;
+        };
+      };
+
+      metadata = system: builtins.fromJSON (builtins.readFile (./. + "/latest.${system}.json"));
 
       nameValuePair = name: value: { inherit name value; };
       genAttrs = names: f: builtins.listToAttrs (map (n: nameValuePair n (f n)) names);
@@ -25,20 +49,12 @@
           overlays = [ (import "${inputs.mozilla}/firefox-overlay.nix") ];
         };
 
-      # impure, but that's by design
-      sysPkgs = (pkgsFor inputs.nixpkgs builtins.currentSystem);
-      version = {
-        name = "Firefox Nightly";
-        version = sysPkgs.lib.firefoxOverlay.firefox_versions.FIREFOX_NIGHTLY;
-        release = false;
-      };
-
-      variants = system: {
-        firefox-nightly-bin =
-          (pkgsFor inputs.nixpkgs system).lib.firefoxOverlay.firefoxVersion (
-            metadata.version // { info = metadata.cachedInfo; }
-          );
-      };
+      variants = system: inputs.nixpkgs.lib.mapAttrs (k: v: 
+        (pkgsFor inputs.nixpkgs system).lib.firefoxOverlay.firefoxVersion (
+          (metadata system)."${k}".version
+            // { info = (metadata system)."${k}".cachedInfo; }
+        )
+      ) (fv system);
     in
     rec {
       devShell =
@@ -61,25 +77,29 @@
         let
           nixpkgs_ = (pkgsFor inputs.nixpkgs system);
           attrValues = inputs.nixpkgs.lib.attrValues;
-        in (variants system)
+          out = (variants system);
+        in out
       );
 
-      latest =
+      latest = inputs.nixpkgs.lib.mapAttrs (k: v:
         let
           pkgs = pkgsFor inputs.nixpkgs builtins.currentSystem;
-          cachedInfo = pkgs.lib.firefoxOverlay.versionInfo version;
         in
-        { inherit version cachedInfo; };
-
-      defaultPackage = forAllSystems (system:
-        let
-          nixpkgs_ = (pkgsFor inputs.nixpkgs system);
-          attrValues = inputs.nixpkgs.lib.attrValues;
-        in
-        nixpkgs_.symlinkJoin {
-          name = "flake-firefox-nightly";
-          paths = attrValues (variants system);
+        {
+          version = v;
+          cachedInfo = pkgs.lib.firefoxOverlay.versionInfo v;
         }
-      );
+      ) (fv builtins.currentSystem);
+
+      # defaultPackage = forAllSystems (system:
+      #   let
+      #     nixpkgs_ = (pkgsFor inputs.nixpkgs system);
+      #     attrValues = inputs.nixpkgs.lib.attrValues;
+      #   in
+      #   nixpkgs_.symlinkJoin {
+      #     name = "flake-firefox-nightly";
+      #     paths = attrValues (variants system);
+      #   }
+      # );
     };
 }

@@ -6,7 +6,7 @@ set -x
 
 cache="nixpkgs-wayland"
 
-oldversion="$(cat latest.json | jq -r '.cachedInfo.chksum' |  grep -Eo '[0-9]{4}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}')"
+oldversion="$(cat latest.x86_64-linux.json | jq -r '.cachedInfo.chksum' |  grep -Eo '[0-9]{4}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}')"
 rm -rf ./.ci/commit-message
 
 nix flake --experimental-features 'nix-command flakes' \
@@ -18,9 +18,9 @@ nix flake --experimental-features 'nix-command flakes' \
 
 nix --experimental-features 'nix-command flakes' \
   eval --impure '.#latest' --json \
-    | jq > latest.json
+    | jq > latest.x86_64-linux.json
 
-newversion="$(cat latest.json | jq -r '.cachedInfo.chksum' |  grep -Eo '[0-9]{4}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}')"
+newversion="$(cat latest.x86_64-linux.json | jq -r '.cachedInfo.chksum' |  grep -Eo '[0-9]{4}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}')"
 
 out="$(mktemp -d)"
 nix-build-uncached \

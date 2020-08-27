@@ -1,0 +1,62 @@
+{
+  "firefox-beta-bin": {
+    "cachedInfo": {
+      "chksum": "https://download.cdn.mozilla.net/pub/firefox/releases/81.0b2/SHA512SUMS",
+      "chksumSig": "https://download.cdn.mozilla.net/pub/firefox/releases/81.0b2/SHA512SUMS.asc",
+      "sha512": "bd303d4239da18dea00577d2033915f2d0f10cc8224d536ef6837ee43aae5d1d62984ca8a68745ede735a7fd1256671b92602f6cf0e4dbf5f2131b60171c2746",
+      "sig": null,
+      "sigSha512": null,
+      "url": "https://download.cdn.mozilla.net/pub/firefox/releases/81.0b2/linux-x86_64/en-US/firefox-81.0b2.tar.bz2"
+    },
+    "version": {
+      "name": "Firefox Beta",
+      "release": true,
+      "version": "81.0b2"
+    }
+  },
+  "firefox-bin": {
+    "cachedInfo": {
+      "chksum": "https://download.cdn.mozilla.net/pub/firefox/releases/80.0/SHA512SUMS",
+      "chksumSig": "https://download.cdn.mozilla.net/pub/firefox/releases/80.0/SHA512SUMS.asc",
+      "sha512": "4aedb5e117328630a1a266d757a0f2822335db2a1fa86a5177433a81d8f500f5f24eaff39ac219a7ee843f48136be7e5f32920b4ba7f9b203fd77bc91d03fe9a",
+      "sig": null,
+      "sigSha512": null,
+      "url": "https://download.cdn.mozilla.net/pub/firefox/releases/80.0/linux-x86_64/en-US/firefox-80.0.tar.bz2"
+    },
+    "version": {
+      "name": "Firefox",
+      "release": true,
+      "version": "80.0"
+    }
+  },
+  "firefox-esr-bin": {
+    "cachedInfo": {
+      "chksum": "https://download.cdn.mozilla.net/pub/firefox/releases/68.12.0esr/SHA512SUMS",
+      "chksumSig": "https://download.cdn.mozilla.net/pub/firefox/releases/68.12.0esr/SHA512SUMS.asc",
+      "sha512": "d71d18a430c3deda64533d7330974c90355bd25fda774b4267dabeb5ce54d6a9056f236abfbe99eb66ed0290eda5e45a6772110e7d283593fd66e950fc8f2277",
+      "sig": null,
+      "sigSha512": null,
+      "url": "https://download.cdn.mozilla.net/pub/firefox/releases/68.12.0esr/linux-x86_64/en-US/firefox-68.12.0esr.tar.bz2"
+    },
+    "version": {
+      "name": "Firefox Esr",
+      "release": true,
+      "version": "68.12.0esr"
+    }
+  },
+  "firefox-nightly-bin": {
+    "cachedInfo": {
+      "chksum": "https://archive.mozilla.org/pub/firefox/nightly/2020/08/2020-08-26-21-41-21-mozilla-central/firefox-82.0a1.en-US.linux-x86_64.checksums",
+      "chksumSig": null,
+      "sha512": "e533607763d9afd4659b9fb49522dffc697dd5c4feaa10a39156a6c8ecb009ab5c9bbdc753b6b38cf8783b7b57f2eb86fe6b2bb249deb9b3c541391ce6b12347",
+      "sig": "https://archive.mozilla.org/pub/firefox/nightly/2020/08/2020-08-26-21-41-21-mozilla-central/firefox-82.0a1.en-US.linux-x86_64.tar.bz2.asc",
+      "sigSha512": "cea6c9df1f5315cd715b66216474a926f708582b1d6b02beb862460228cb1e66d931ba8d48d35e7eabbe80efd2cfaa7c853d4fe9f0a035f1520ca277a115d373",
+      "url": "https://archive.mozilla.org/pub/firefox/nightly/2020/08/2020-08-26-21-41-21-mozilla-central/firefox-82.0a1.en-US.linux-x86_64.tar.bz2"
+    },
+    "version": {
+      "name": "Firefox Nightly",
+      "release": false,
+      "version": "82.0a1"
+    }
+  }
+}
