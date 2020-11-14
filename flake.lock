@@ -1,6 +1,6 @@
 {
   "nodes": {
-    "cachixpkgs": {
+    "cachix": {
       "locked": {
         "lastModified": 1605220118,
         "narHash": "sha256-Und10ixH1WuW0XHYMxxuHRohKYb45R/T8CwZuLd2D2Q=",
@@ -35,15 +35,15 @@
     "mozilla": {
       "flake": false,
       "locked": {
-        "lastModified": 1595288330,
-        "narHash": "sha256-ykuEol9PGFoVYBR34leE/P9O9b4eyvxCJaASY/zRjes=",
-        "owner": "colemickens",
+        "lastModified": 1603906276,
+        "narHash": "sha256-RsNPnEKd7BcogwkqhaV5kI/HuNC4flH/OQCC/4W5y/8=",
+        "owner": "mozilla",
         "repo": "nixpkgs-mozilla",
-        "rev": "047556ee50548da3d4f72bc9c34c29e46e5c1c08",
+        "rev": "8c007b60731c07dd7a052cce508de3bb1ae849b4",
         "type": "github"
       },
       "original": {
-        "owner": "colemickens",
+        "owner": "mozilla",
         "repo": "nixpkgs-mozilla",
         "type": "github"
       }
@@ -66,7 +66,7 @@
     },
     "root": {
       "inputs": {
-        "cachixpkgs": "cachixpkgs",
+        "cachix": "cachix",
         "cmpkgs": "cmpkgs",
         "mozilla": "mozilla",
         "nixpkgs": "nixpkgs"

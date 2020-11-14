@@ -5,8 +5,8 @@
   inputs = {
     nixpkgs = { url = "github:nixos/nixpkgs/nixos-unstable"; };
     cmpkgs = { url = "github:colemickens/nixpkgs/cmpkgs"; };# TODO: remove
-    cachixpkgs = { url = "github:nixos/nixpkgs/nixos-20.09"; };
-    mozilla = { url = "github:colemickens/nixpkgs-mozilla"; flake = false; };
+    cachix = { url = "github:nixos/nixpkgs/nixos-20.09"; };
+    mozilla = { url = "github:mozilla/nixpkgs-mozilla"; flake = false; };
   };
 
   outputs = inputs:
@@ -45,7 +45,7 @@
       devShell = forAllSystems (system:
         pkgs_.nixpkgs.${system}.mkShell {
           nativeBuildInputs = []
-            ++ (with pkgs_.cachixpkgs.${system}; [ cachix ])
+            ++ (with pkgs_.cachix.${system}; [ cachix ])
             ++ (with pkgs_.nixpkgs.${system}; [ bash cacert curl git jq mercurial openssh ripgrep ])
             ++ (with pkgs_.cmpkgs.${system}; [ nixUnstable nix-prefetch nix-build-uncached ])
           ;

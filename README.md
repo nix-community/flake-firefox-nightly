@@ -10,9 +10,7 @@ otherwise is not so possbile)
 
 # Warnings
 
-1. This uses my fork of nixpkgs-mozilla, pending this PR: https://github.com/mozilla/nixpkgs-mozilla/pull/230
-
-2. The structures of outputs of the flake may change when I update to export more of the
+1. The structures of outputs of the flake may change if/when I update to export more of the
    firefox-overlay ouputs. (a breaking change for users potentially)
 
 # Security Warning
