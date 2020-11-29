@@ -9,13 +9,6 @@ cache="nixpkgs-wayland"
 oldversion="$(cat latest.json | jq -r '.cachedInfo.chksum' |  grep -Eo '[0-9]{4}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}')"
 rm -rf ./.ci/commit-message
 
-nix flake --experimental-features 'nix-command flakes' \
-  update \
-    --update-input master \
-    --update-input nixpkgs \
-    --update-input mozilla \
-    --update-input cachixpkgs
-
 nix --experimental-features 'nix-command flakes' \
   eval --impure '.#latest' --json \
     | jq > latest.json
