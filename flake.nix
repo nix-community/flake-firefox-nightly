@@ -1,10 +1,8 @@
 {
   description = "firefox-nightly";
 
-  # TODO: should warn whenever flakes are resolved to different versions (names of flakes should match repo names?)
   inputs = {
     nixpkgs = { url = "github:nixos/nixpkgs/nixos-unstable"; };
-    cmpkgs = { url = "github:colemickens/nixpkgs/cmpkgs"; };# TODO: remove
     cachix = { url = "github:nixos/nixpkgs/nixos-20.09"; };
     mozilla = { url = "github:mozilla/nixpkgs-mozilla"; flake = false; };
   };
@@ -46,8 +44,10 @@
         pkgs_.nixpkgs.${system}.mkShell {
           nativeBuildInputs = []
             ++ (with pkgs_.cachix.${system}; [ cachix ])
-            ++ (with pkgs_.nixpkgs.${system}; [ bash cacert curl git jq mercurial openssh ripgrep ])
-            ++ (with pkgs_.cmpkgs.${system}; [ nixUnstable nix-prefetch nix-build-uncached ])
+            ++ (with pkgs_.nixpkgs.${system}; [
+                nixUnstable nix-prefetch nix-build-uncached
+                bash cacert curl git jq mercurial openssh ripgrep
+            ])
           ;
         }
       );
