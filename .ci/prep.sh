@@ -2,8 +2,6 @@
 set -euo pipefail
 set -x
 
-ssh-keyscan github.com >> ${HOME}/.ssh/known_hosts
-
 git config --global user.name \
  "Cole Botkens"
 
