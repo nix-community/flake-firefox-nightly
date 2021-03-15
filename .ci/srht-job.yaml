@@ -7,15 +7,15 @@ secrets:
 environment:
   CI_BUILD: "sr.ht"
 tasks:
+  - prep: |
+      nix-shell -I 'nixpkgs=https://github.com/nixos/nixpkgs/archive/nixos-unstable.tar.gz' -p git --command "git config --global user.name 'Cole Botkens'"
+      nix-shell -I 'nixpkgs=https://github.com/nixos/nixpkgs/archive/nixos-unstable.tar.gz' -p git --command "git config --global user.email 'cole.mickens+colebot@gmail.com'"
   - flake-update: |
       cd flake-firefox-nightly
-      nix-shell -I 'https://github.com/nixos/nixpkgs/archive/nixos-unstable.tar.gz' -p nixUnstable --command "nix --experimental-features 'nix-command flakes' flake update --recreate-lock-file --no-registries"
-  - prep: |
-      cd flake-firefox-nightly
-      nix-shell --pure --command "./.ci/prep.sh"
+      nix-shell -I 'nixpkgs=https://github.com/nixos/nixpkgs/archive/nixos-unstable.tar.gz' -p nixUnstable --command "nix --experimental-features 'nix-command flakes' flake update --commit-lock-file --no-registries"
   - update: |
       cd flake-firefox-nightly
-      nix-shell --pure --command "CI_BUILD=sr.ht ./update.sh"
+      nix-shell --pure --keep CI_BUILD --command "./update.sh"
   - push: |
       cd flake-firefox-nightly
-      nix-shell --pure --command "./.ci/push.sh"
+      nix-shell --pure --keep CI_BUILD --command "./.ci/push.sh"
