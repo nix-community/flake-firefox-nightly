@@ -1,11 +1,11 @@
 {
   "cachedInfo": {
-    "chksum": "https://archive.mozilla.org/pub/firefox/nightly/2021/03/2021-03-29-09-51-28-mozilla-central/firefox-89.0a1.en-US.linux-x86_64.checksums",
+    "chksum": "https://archive.mozilla.org/pub/firefox/nightly/2021/03/2021-03-28-21-39-01-mozilla-central/firefox-89.0a1.en-US.linux-x86_64.checksums",
     "chksumSig": null,
-    "sha512": "ca8de9c83c2a0fcc7670648d5605de660d50526b6615bdc5140798486bb40621aa3d512e5e587e2c6882a7dc233660efeca2104f14bc8fe222f2102bc09bad7d",
-    "sig": "https://archive.mozilla.org/pub/firefox/nightly/2021/03/2021-03-29-09-51-28-mozilla-central/firefox-89.0a1.en-US.linux-x86_64.tar.bz2.asc",
-    "sigSha512": "c542705dfee3f7d31be42e27c6f72b22c13501602750c8e805c65e243ea2663e77e64e5746140693a2a354417211272cbbc4b4b2970cd0b44c19388d3062ab5f",
-    "url": "https://archive.mozilla.org/pub/firefox/nightly/2021/03/2021-03-29-09-51-28-mozilla-central/firefox-89.0a1.en-US.linux-x86_64.tar.bz2"
+    "sha512": "b3dbd2030c20367f2ea8a36de47654f49bf9ea8b5cc7864616fc44ea6c65adf42b15555746573fb79d6dbafd8ecad821b95a5313af1d66da2d6c94a0dd219771",
+    "sig": "https://archive.mozilla.org/pub/firefox/nightly/2021/03/2021-03-28-21-39-01-mozilla-central/firefox-89.0a1.en-US.linux-x86_64.tar.bz2.asc",
+    "sigSha512": "b3e394c7db94f99c7afbcad681bc991306e87bba0d5f5c90368ba5ee0049fc859ff27860c262acf7150462ab5a0a1610548a06a2732cdaf2c68a0da6d3053cf6",
+    "url": "https://archive.mozilla.org/pub/firefox/nightly/2021/03/2021-03-28-21-39-01-mozilla-central/firefox-89.0a1.en-US.linux-x86_64.tar.bz2"
   },
   "version": {
     "name": "Firefox Nightly",
