@@ -38,9 +38,4 @@ if find ${out} | grep result; then
   cachix push "${cache}" < "${out}/paths"
 fi
 
-if [[ "${newversion}" != "${oldversion}" ]]; then
-  commitmsg="firefox-nightly-bin: ${oldversion} -> ${newversion}"
-  echo -e "${commitmsg}" > .ci/commit-message
-else
-  echo "nothing to do, there was no version bump"
-fi
+git commit ./latest.json -m "firefox-nightly-bin: ${oldversion} -> ${newversion}" || true
