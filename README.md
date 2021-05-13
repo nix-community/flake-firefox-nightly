@@ -1,6 +1,6 @@
 # flake-firefox-nightly
 
-[![builds.sr.ht status](https://builds.sr.ht/~colemickens/flake-firefox-nightly.svg)](https://builds.sr.ht/~colemickens/flake-firefox-nightly?)
+[![Update](https://github.com/colemickens/flake-firefox-nightly/actions/workflows/update.yaml/badge.svg)](https://github.com/colemickens/flake-firefox-nightly/actions/workflows/update.yaml)
 
 This is a nix flake that lets you import `firefoxNightly` via flake
 in a pinned, safely reproducible manner.
