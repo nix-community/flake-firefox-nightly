@@ -2,6 +2,12 @@
 
 [![Update](https://github.com/colemickens/flake-firefox-nightly/actions/workflows/update.yaml/badge.svg)](https://github.com/colemickens/flake-firefox-nightly/actions/workflows/update.yaml)
 
+## status
+
+My nix projects are on indefinite hold until something is done about impure-eval on stable nix, or until some sort of actual leadership emerges around flakes.
+
+## overview
+
 This is a nix flake that lets you import `firefoxNightly` via flake
 in a pinned, safely reproducible manner.
 
