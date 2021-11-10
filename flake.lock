@@ -19,11 +19,11 @@
     "mozilla": {
       "flake": false,
       "locked": {
-        "lastModified": 1636569352,
-        "narHash": "sha256-zVc1GXiQ8CijFyH86BolxEBBpDfnXCK0hSAQip0T0J4=",
+        "lastModified": 1636569584,
+        "narHash": "sha256-iDFogua24bhFJZSxG/jhZbbNxDXuKP9S/pyRIYzrRPM=",
         "owner": "mozilla",
         "repo": "nixpkgs-mozilla",
-        "rev": "728f3df8936c74ca5417259bb602e9bac66e3e60",
+        "rev": "9f70f86d73fa97e043bebeb58e5676d157069cfb",
         "type": "github"
       },
       "original": {
