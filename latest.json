@@ -1,11 +1,11 @@
 {
   "cachedInfo": {
-    "chksum": "https://archive.mozilla.org/pub/firefox/nightly/2022/01/2022-01-26-19-06-17-mozilla-central/firefox-98.0a1.en-US.linux-x86_64.checksums",
+    "chksum": "https://archive.mozilla.org/pub/firefox/nightly/2022/01/2022-01-27-09-46-20-mozilla-central/firefox-98.0a1.en-US.linux-x86_64.checksums",
     "chksumSig": null,
-    "sha512": "58c9333d36c33ce7208059183411e03347d045d63f4ec7ba8e20d43d05301e57c1512925f6c3d4ac9a07a1bebfde7f2081612ea46c74644106e9dd80744db5e1",
-    "sig": "https://archive.mozilla.org/pub/firefox/nightly/2022/01/2022-01-26-19-06-17-mozilla-central/firefox-98.0a1.en-US.linux-x86_64.tar.bz2.asc",
-    "sigSha512": "f474dd71c65dc936a387803b0dc25d0651a1a2d4b4828247750dc8a41549e12499e83477e47e1e5224435ed0e3ec9d2aaa0f2d44c69839120635840b9158ca2a",
-    "url": "https://archive.mozilla.org/pub/firefox/nightly/2022/01/2022-01-26-19-06-17-mozilla-central/firefox-98.0a1.en-US.linux-x86_64.tar.bz2"
+    "sha512": "0f5228e6bd6678d8b436d2a985b938d67c3791f974840701a591be9f96513c6c0267c75cb10f772b3e3c6ad2cda983fda1c006c38cc91c0efec64b707ae670a7",
+    "sig": "https://archive.mozilla.org/pub/firefox/nightly/2022/01/2022-01-27-09-46-20-mozilla-central/firefox-98.0a1.en-US.linux-x86_64.tar.bz2.asc",
+    "sigSha512": "6b5168aa3a4672e5a27fc4f2e481e8b96d5fe56dca91af1e6b655e923366895ca807993b086d3396de05b39776bc7a89ec60676e2ab705cfab6b88042d7ac7b1",
+    "url": "https://archive.mozilla.org/pub/firefox/nightly/2022/01/2022-01-27-09-46-20-mozilla-central/firefox-98.0a1.en-US.linux-x86_64.tar.bz2"
   },
   "version": {
     "name": "Firefox Nightly",
