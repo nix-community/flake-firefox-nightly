@@ -6,14 +6,21 @@ set -x
 
 cache="nixpkgs-wayland"
 
-oldversion="$(cat latest.json | jq -r '.cachedInfo.chksum' |  grep -Eo '[0-9]{4}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}')"
+oldversion="$(cat latest.json \
+  | jq -r '.["x86_64-linux"].versionInfo["firefox-nightly-bin"].chksum' \
+  | grep -Eo '[0-9]{4}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}')"
 rm -rf ./.ci/commit-message
 
 nix --experimental-features 'nix-command flakes' \
   eval --impure '.#latest' --json \
-    | jq > latest.json
+    | jq > new-latest.json
+  
+newversion="$(cat new-latest.json \
+  | jq -r '.["x86_64-linux"].versionInfo["firefox-nightly-bin"].chksum' \
+  | grep -Eo '[0-9]{4}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}')"
 
-newversion="$(cat latest.json | jq -r '.cachedInfo.chksum' |  grep -Eo '[0-9]{4}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}')"
+mv latest.json /tmp/latest.json
+mv new-latest.json latest.json    
 
 out="$(mktemp -d)"
 nix-build-uncached -build-flags "\
