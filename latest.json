@@ -16,7 +16,7 @@
       "firefox-esr-bin": {
         "name": "Firefox ESR",
         "release": true,
-        "version": "91.9.1esr",
+        "version": "91.10.0esr",
         "wmClass": "firefox"
       },
       "firefox-nightly-bin": {
@@ -44,12 +44,12 @@
         "url": "https://download.cdn.mozilla.net/pub/firefox/releases/101.0/linux-x86_64/en-US/firefox-101.0.tar.bz2"
       },
       "firefox-esr-bin": {
-        "chksum": "https://download.cdn.mozilla.net/pub/firefox/releases/91.9.1esr/SHA512SUMS",
-        "chksumSig": "https://download.cdn.mozilla.net/pub/firefox/releases/91.9.1esr/SHA512SUMS.asc",
-        "sha512": "389f5c151dfd19f60fb48a8271ddad1b19b2f55847d380f9a79ccb08cc7571d3f64c089340c3c25182def92432f258db435f14dcad78ff7df66f131c8278ec39",
+        "chksum": "https://download.cdn.mozilla.net/pub/firefox/releases/91.10.0esr/SHA512SUMS",
+        "chksumSig": "https://download.cdn.mozilla.net/pub/firefox/releases/91.10.0esr/SHA512SUMS.asc",
+        "sha512": "670bd4c1dd05ee62e426d2720679ab803af98b619b7caab867181df9147bbbaf840aa60f5118ebc6f7537d846241eea8bb8218cb56812f9e17b5921f14e92dfa",
         "sig": null,
         "sigSha512": null,
-        "url": "https://download.cdn.mozilla.net/pub/firefox/releases/91.9.1esr/linux-x86_64/en-US/firefox-91.9.1esr.tar.bz2"
+        "url": "https://download.cdn.mozilla.net/pub/firefox/releases/91.10.0esr/linux-x86_64/en-US/firefox-91.10.0esr.tar.bz2"
       },
       "firefox-nightly-bin": {
         "chksum": "https://archive.mozilla.org/pub/firefox/nightly/2022/05/2022-05-31-06-57-24-mozilla-central/firefox-103.0a1.en-US.linux-x86_64.checksums",
