@@ -22,7 +22,7 @@
       "firefox-nightly-bin": {
         "name": "Firefox Nightly",
         "release": false,
-        "version": "103.0a1",
+        "version": "104.0a1",
         "wmClass": "firefox-nightly"
       }
     },
@@ -52,12 +52,12 @@
         "url": "https://download.cdn.mozilla.net/pub/firefox/releases/91.10.0esr/linux-x86_64/en-US/firefox-91.10.0esr.tar.bz2"
       },
       "firefox-nightly-bin": {
-        "chksum": "https://archive.mozilla.org/pub/firefox/nightly/2022/06/2022-06-27-07-55-47-mozilla-central/firefox-103.0a1.en-US.linux-x86_64.checksums",
+        "chksum": "https://archive.mozilla.org/pub/firefox/nightly/2022/06/2022-06-27-21-50-36-mozilla-central/firefox-104.0a1.en-US.linux-x86_64.checksums",
         "chksumSig": null,
-        "sha512": "3b81aae31a5200f3a55e2f67f75a9f517b4d4edabe9f383786926f0e50da3d77089c0b3cbd4732238f9608261f7aefc0b46ac1af380d3bbc7f2331e9c26f7c82",
-        "sig": "https://archive.mozilla.org/pub/firefox/nightly/2022/06/2022-06-27-07-55-47-mozilla-central/firefox-103.0a1.en-US.linux-x86_64.tar.bz2.asc",
-        "sigSha512": "e9459f128f6289c24552b02f6371f580ebef5764f803ac3b9006cf256efe5eddfe539677fa7c24b14a9db8ebde07bf5da9352aab0a2dce5303ed0a5a4e6d32a6",
-        "url": "https://archive.mozilla.org/pub/firefox/nightly/2022/06/2022-06-27-07-55-47-mozilla-central/firefox-103.0a1.en-US.linux-x86_64.tar.bz2"
+        "sha512": "ac66f1de2d0a612e3140680f4ffba43fe80ae9bcb774f2dd8c7e930532bb7180fe424c2abe040f82ca2ccf00a62cdd774926b661ebbff9589ab595cf24298cac",
+        "sig": "https://archive.mozilla.org/pub/firefox/nightly/2022/06/2022-06-27-21-50-36-mozilla-central/firefox-104.0a1.en-US.linux-x86_64.tar.bz2.asc",
+        "sigSha512": "2a186cdf27add89e3e02fc529bc1735a2b0b98f94aabed26d8a3d5fc72909437fd4c0f97d40b62dec4acfdfe76fab3b644e86ffbc82ad8fcb86c033a52c2dbf1",
+        "url": "https://archive.mozilla.org/pub/firefox/nightly/2022/06/2022-06-27-21-50-36-mozilla-central/firefox-104.0a1.en-US.linux-x86_64.tar.bz2"
       }
     }
   }
