@@ -10,6 +10,19 @@ in a pinned, safely reproducible manner.
 (put another way, this allows flakes --pure-eval + firefox-nightly, which
 otherwise is not so possbile)
 
+# Usage
+
+```nix
+{ pkgs, inputs, config, ... }:
+{
+  config = {
+    environment.systemPackages = [
+      inputs.firefox.packages.${pkgs.system}.firefox-nightly-bin
+    ];
+  };
+}
+```
+
 # Warnings
 
 1. The structures of outputs of the flake may change if/when I update to export more of the
