@@ -10,7 +10,7 @@
       "firefox-bin": {
         "name": "Firefox",
         "release": true,
-        "version": "106.0.3",
+        "version": "106.0.4",
         "wmClass": "firefox"
       },
       "firefox-esr-bin": {
@@ -36,12 +36,12 @@
         "url": "https://download.cdn.mozilla.net/pub/firefox/releases/107.0b8/linux-x86_64/en-US/firefox-107.0b8.tar.bz2"
       },
       "firefox-bin": {
-        "chksum": "https://download.cdn.mozilla.net/pub/firefox/releases/106.0.3/SHA512SUMS",
-        "chksumSig": "https://download.cdn.mozilla.net/pub/firefox/releases/106.0.3/SHA512SUMS.asc",
-        "sha512": "1deb7997873a666a36ffb48eb1b1521dabd45ce8d472853b97cfc6b396986f07cf16864b7d13661f602de16543ac6363c11cb2f937efa019e870ec79ccc84583",
+        "chksum": "https://download.cdn.mozilla.net/pub/firefox/releases/106.0.4/SHA512SUMS",
+        "chksumSig": "https://download.cdn.mozilla.net/pub/firefox/releases/106.0.4/SHA512SUMS.asc",
+        "sha512": "c2864a4fd046f55c72b009ae3d08ef0ddd53b04ef3ea932a1bfc73d5c3fcb32033a45e8996e7971a8a6586cea58bbe28c7503cf3e80962e0a4cb996dcd24f2da",
         "sig": null,
         "sigSha512": null,
-        "url": "https://download.cdn.mozilla.net/pub/firefox/releases/106.0.3/linux-x86_64/en-US/firefox-106.0.3.tar.bz2"
+        "url": "https://download.cdn.mozilla.net/pub/firefox/releases/106.0.4/linux-x86_64/en-US/firefox-106.0.4.tar.bz2"
       },
       "firefox-esr-bin": {
         "chksum": "https://download.cdn.mozilla.net/pub/firefox/releases/102.4.0esr/SHA512SUMS",
