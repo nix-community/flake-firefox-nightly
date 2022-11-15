@@ -10,13 +10,13 @@
       "firefox-bin": {
         "name": "Firefox",
         "release": true,
-        "version": "106.0.5",
+        "version": "107.0",
         "wmClass": "firefox"
       },
       "firefox-esr-bin": {
         "name": "Firefox ESR",
         "release": true,
-        "version": "102.4.0esr",
+        "version": "102.5.0esr",
         "wmClass": "firefox"
       },
       "firefox-nightly-bin": {
@@ -36,20 +36,20 @@
         "url": "https://download.cdn.mozilla.net/pub/firefox/releases/107.0b9/linux-x86_64/en-US/firefox-107.0b9.tar.bz2"
       },
       "firefox-bin": {
-        "chksum": "https://download.cdn.mozilla.net/pub/firefox/releases/106.0.5/SHA512SUMS",
-        "chksumSig": "https://download.cdn.mozilla.net/pub/firefox/releases/106.0.5/SHA512SUMS.asc",
-        "sha512": "70dc4d8c6df3545204a8f8dce7b9a4963024f122b7a6d48c42bb82801b1be8f0b3b3575564a23a82028caec441d847b6023e89a812a71d765a72d26f3770e9f0",
+        "chksum": "https://download.cdn.mozilla.net/pub/firefox/releases/107.0/SHA512SUMS",
+        "chksumSig": "https://download.cdn.mozilla.net/pub/firefox/releases/107.0/SHA512SUMS.asc",
+        "sha512": "0e9725d40278703545187178a1104d0ed0f0b08d61444b95e0f51b66f2f9ae8313d8cda4e19665e05bf27660dd18166b37c0bd1a523185dbc0f81dbc5edc5915",
         "sig": null,
         "sigSha512": null,
-        "url": "https://download.cdn.mozilla.net/pub/firefox/releases/106.0.5/linux-x86_64/en-US/firefox-106.0.5.tar.bz2"
+        "url": "https://download.cdn.mozilla.net/pub/firefox/releases/107.0/linux-x86_64/en-US/firefox-107.0.tar.bz2"
       },
       "firefox-esr-bin": {
-        "chksum": "https://download.cdn.mozilla.net/pub/firefox/releases/102.4.0esr/SHA512SUMS",
-        "chksumSig": "https://download.cdn.mozilla.net/pub/firefox/releases/102.4.0esr/SHA512SUMS.asc",
-        "sha512": "4a58efb207e71b910fd386b9b16217ba25cc81f19a17e067044864f07a420667a234d0aa93356c93041dd826159ad3a8dcafab970513b6c4df6a77ddcb00ae66",
+        "chksum": "https://download.cdn.mozilla.net/pub/firefox/releases/102.5.0esr/SHA512SUMS",
+        "chksumSig": "https://download.cdn.mozilla.net/pub/firefox/releases/102.5.0esr/SHA512SUMS.asc",
+        "sha512": "9402592c0bc90b4bd937f5eca127eea867d75a97179a9979476bd670e9b2c03248180c2ba2be4d637cb32e1a4b5937b4377eeab454857da14325426156e8acd5",
         "sig": null,
         "sigSha512": null,
-        "url": "https://download.cdn.mozilla.net/pub/firefox/releases/102.4.0esr/linux-x86_64/en-US/firefox-102.4.0esr.tar.bz2"
+        "url": "https://download.cdn.mozilla.net/pub/firefox/releases/102.5.0esr/linux-x86_64/en-US/firefox-102.5.0esr.tar.bz2"
       },
       "firefox-nightly-bin": {
         "chksum": "https://archive.mozilla.org/pub/firefox/nightly/2022/11/2022-11-14-08-51-51-mozilla-central/firefox-108.0a1.en-US.linux-x86_64.checksums",
