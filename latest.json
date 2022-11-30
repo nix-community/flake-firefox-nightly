@@ -52,12 +52,12 @@
         "url": "https://download.cdn.mozilla.net/pub/firefox/releases/102.5.0esr/linux-x86_64/en-US/firefox-102.5.0esr.tar.bz2"
       },
       "firefox-nightly-bin": {
-        "chksum": "https://archive.mozilla.org/pub/firefox/nightly/2022/11/2022-11-30-09-43-38-mozilla-central/firefox-109.0a1.en-US.linux-x86_64.checksums",
+        "chksum": "https://archive.mozilla.org/pub/firefox/nightly/2022/11/2022-11-29-08-40-32-mozilla-central/firefox-109.0a1.en-US.linux-x86_64.checksums",
         "chksumSig": null,
-        "sha512": "0e228590404b6dc517a11a59be283ed7965e83b4113aae0ecf412d313c4487f38dd94746f7a2f0ab8ec79186b4c6d765e0a78247418863dbe983ca59e0ecf435",
-        "sig": "https://archive.mozilla.org/pub/firefox/nightly/2022/11/2022-11-30-09-43-38-mozilla-central/firefox-109.0a1.en-US.linux-x86_64.tar.bz2.asc",
-        "sigSha512": "09d00f819134e62fefd0c0a39a2dd09f5130b5e90ef52f3e78250ea70735b7b2745a72bb664c287a127e598df6ab4728466842d6d4807410a23cfda763136335",
-        "url": "https://archive.mozilla.org/pub/firefox/nightly/2022/11/2022-11-30-09-43-38-mozilla-central/firefox-109.0a1.en-US.linux-x86_64.tar.bz2"
+        "sha512": "c56d65f9c63b69ea748ceaa765e8406eba9f4eebb7ab9272cd05e60d5d4e3c70019a8326f2a81d5f18d5124967ffc18ac4b3fa97a95f6b40f79939f350c23dc6",
+        "sig": "https://archive.mozilla.org/pub/firefox/nightly/2022/11/2022-11-29-08-40-32-mozilla-central/firefox-109.0a1.en-US.linux-x86_64.tar.bz2.asc",
+        "sigSha512": "278e0072545924453fd51319e795bd34bc1e3d5aebbafe43a8db0437d06117510b7ba1dfbd5259756e12cd36d9c41be8d149c1d0863da2ae48f8198c32c4f45c",
+        "url": "https://archive.mozilla.org/pub/firefox/nightly/2022/11/2022-11-29-08-40-32-mozilla-central/firefox-109.0a1.en-US.linux-x86_64.tar.bz2"
       }
     }
   }
