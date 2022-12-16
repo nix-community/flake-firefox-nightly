@@ -4,13 +4,13 @@
       "firefox-beta-bin": {
         "name": "Firefox Beta",
         "release": true,
-        "version": "109.0b2",
+        "version": "109.0b3",
         "wmClass": "firefox-beta"
       },
       "firefox-bin": {
         "name": "Firefox",
         "release": true,
-        "version": "108.0",
+        "version": "108.0.1",
         "wmClass": "firefox"
       },
       "firefox-esr-bin": {
@@ -28,20 +28,20 @@
     },
     "versionInfo": {
       "firefox-beta-bin": {
-        "chksum": "https://download.cdn.mozilla.net/pub/firefox/releases/109.0b2/SHA512SUMS",
-        "chksumSig": "https://download.cdn.mozilla.net/pub/firefox/releases/109.0b2/SHA512SUMS.asc",
-        "sha512": "3dd499ab2b01e18911efd3773385cc4378cb8c158ecd8600ccdab49c440341262db0cf8e719c80fafac0d02fc844a1eefd3f36c9bdbeae8197cb7ef8e00be32d",
+        "chksum": "https://download.cdn.mozilla.net/pub/firefox/releases/109.0b3/SHA512SUMS",
+        "chksumSig": "https://download.cdn.mozilla.net/pub/firefox/releases/109.0b3/SHA512SUMS.asc",
+        "sha512": "85c076a0d76dcd9db21a324af4bf6340a0fb551dd422a5921188da343007d7e37661ec8fead53e58c2ae9a5aeb87042c435428953dcd3efee577566b78f9cf3c",
         "sig": null,
         "sigSha512": null,
-        "url": "https://download.cdn.mozilla.net/pub/firefox/releases/109.0b2/linux-x86_64/en-US/firefox-109.0b2.tar.bz2"
+        "url": "https://download.cdn.mozilla.net/pub/firefox/releases/109.0b3/linux-x86_64/en-US/firefox-109.0b3.tar.bz2"
       },
       "firefox-bin": {
-        "chksum": "https://download.cdn.mozilla.net/pub/firefox/releases/108.0/SHA512SUMS",
-        "chksumSig": "https://download.cdn.mozilla.net/pub/firefox/releases/108.0/SHA512SUMS.asc",
-        "sha512": "012ac4b39824945f8d1cec3cb30975f00889ed5837a966fdc715b9d9260318eeabd994a750b8fcce5a84f49cf755971aff7d906fe34ab3e6722b1a1b6f10a05b",
+        "chksum": "https://download.cdn.mozilla.net/pub/firefox/releases/108.0.1/SHA512SUMS",
+        "chksumSig": "https://download.cdn.mozilla.net/pub/firefox/releases/108.0.1/SHA512SUMS.asc",
+        "sha512": "b8f27a318b2110769f38ecb94ddbbc72171d91db2f35a328261a6226be0f3fcefde243c90412908058a14fae3e90ff7f4cfd05b2b8fab3f644e5ead6b496932d",
         "sig": null,
         "sigSha512": null,
-        "url": "https://download.cdn.mozilla.net/pub/firefox/releases/108.0/linux-x86_64/en-US/firefox-108.0.tar.bz2"
+        "url": "https://download.cdn.mozilla.net/pub/firefox/releases/108.0.1/linux-x86_64/en-US/firefox-108.0.1.tar.bz2"
       },
       "firefox-esr-bin": {
         "chksum": "https://download.cdn.mozilla.net/pub/firefox/releases/102.6.0esr/SHA512SUMS",
