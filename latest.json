@@ -52,12 +52,12 @@
         "url": "https://download.cdn.mozilla.net/pub/firefox/releases/102.6.0esr/linux-x86_64/en-US/firefox-102.6.0esr.tar.bz2"
       },
       "firefox-nightly-bin": {
-        "chksum": "https://archive.mozilla.org/pub/firefox/nightly/2022/12/2022-12-30-04-40-34-mozilla-central/firefox-110.0a1.en-US.linux-x86_64.checksums",
+        "chksum": "https://archive.mozilla.org/pub/firefox/nightly/2022/12/2022-12-31-09-19-49-mozilla-central/firefox-110.0a1.en-US.linux-x86_64.checksums",
         "chksumSig": null,
-        "sha512": "10c04a796d7253c98b54c59fcc0e6d415b0949c06ab6596f9616eac03525b099c9844c5fc4aad7393a08b9339ef1356368003c0c694f5de840b10a6db87e5b6b",
-        "sig": "https://archive.mozilla.org/pub/firefox/nightly/2022/12/2022-12-30-04-40-34-mozilla-central/firefox-110.0a1.en-US.linux-x86_64.tar.bz2.asc",
-        "sigSha512": "b3ec2b339ec397c1803638a78aff95f8f6ec5ca4c69ec3ca059a28a5737afc1ed006da845d72a4c0bde7ce435922179ea249a36bb92ac2798c0843b2080d9da4",
-        "url": "https://archive.mozilla.org/pub/firefox/nightly/2022/12/2022-12-30-04-40-34-mozilla-central/firefox-110.0a1.en-US.linux-x86_64.tar.bz2"
+        "sha512": "b2cba798b2c68c7ab7e59e3b575d4b117dc9419873b0143d236357309d5506a38013538152fcd69bea4276956efe6342d4e186f1449ea9ea7facd9da1d6c1bea",
+        "sig": "https://archive.mozilla.org/pub/firefox/nightly/2022/12/2022-12-31-09-19-49-mozilla-central/firefox-110.0a1.en-US.linux-x86_64.tar.bz2.asc",
+        "sigSha512": "f9545d614106b18f238a92c7cf872acf5930d3572d528feee15380be2f34d67438800a3a631fa2e217b5f3248dc1b4da8677839a1853a3dfb4cb8b2adbd61433",
+        "url": "https://archive.mozilla.org/pub/firefox/nightly/2022/12/2022-12-31-09-19-49-mozilla-central/firefox-110.0a1.en-US.linux-x86_64.tar.bz2"
       }
     }
   }
