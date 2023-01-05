@@ -4,8 +4,6 @@
   inputs = {
     nixpkgs = { url = "github:nixos/nixpkgs/nixos-unstable"; };
     cachix = { url = "github:nixos/nixpkgs/nixos-20.09"; };
-    # mozilla = { url = "github:mozilla/nixpkgs-mozilla"; flake = false; };
-    # TODO:
     mozilla = { url = "github:mozilla/nixpkgs-mozilla"; flake = false; };
   };
 
