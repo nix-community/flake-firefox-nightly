@@ -10,7 +10,7 @@
       "firefox-bin": {
         "name": "Firefox",
         "release": true,
-        "version": "108.0.2",
+        "version": "109.0",
         "wmClass": "firefox"
       },
       "firefox-esr-bin": {
@@ -39,15 +39,15 @@
         "url": "https://download.cdn.mozilla.net/pub/firefox/releases/109.0b9/linux-x86_64/en-US/firefox-109.0b9.tar.bz2"
       },
       "firefox-bin": {
-        "chksum": "https://download.cdn.mozilla.net/pub/firefox/releases/108.0.2/SHA512SUMS",
-        "chksumSha256": "c0ef485e553f447aa5722f7683d789b09fda7a051a6fcf1c67d31a68508c10cb",
-        "chksumSig": "https://download.cdn.mozilla.net/pub/firefox/releases/108.0.2/SHA512SUMS.asc",
-        "chksumSigSha256": "994d92163e76f6a75bad4b1f8b6d17028e0d714095c9959eb07a02082f1a3e3e",
-        "file": "linux-x86_64/en-US/firefox-108.0.2.tar.bz2",
-        "sha512": "7e2ba5eda59582c8466a743193b33d2d8d58766a4e8e3e82ba81ab4f226c1589256a7e39a7f261312e1229228ed78ab88bede0e04bd8d479098172b57f688622",
+        "chksum": "https://download.cdn.mozilla.net/pub/firefox/releases/109.0/SHA512SUMS",
+        "chksumSha256": "0f851278012fb0ed7b7d9fb380a500d3a4dc51b6bc54cae4ec0b8d5bb49540fd",
+        "chksumSig": "https://download.cdn.mozilla.net/pub/firefox/releases/109.0/SHA512SUMS.asc",
+        "chksumSigSha256": "9d1c34b74e7f921b0e10a00afbcb3083699da06c969e45ea1315228b8c613d11",
+        "file": "linux-x86_64/en-US/firefox-109.0.tar.bz2",
+        "sha512": "570e54faf9508fe77ba21e97b2e75198349012498e4339066f99d2059cb6021c0a25c9212706d28bd605dfd9d800587767253bf466a90b3ef94f79334b4e9acc",
         "sig": null,
         "sigSha512": null,
-        "url": "https://download.cdn.mozilla.net/pub/firefox/releases/108.0.2/linux-x86_64/en-US/firefox-108.0.2.tar.bz2"
+        "url": "https://download.cdn.mozilla.net/pub/firefox/releases/109.0/linux-x86_64/en-US/firefox-109.0.tar.bz2"
       },
       "firefox-esr-bin": {
         "chksum": "https://download.cdn.mozilla.net/pub/firefox/releases/102.6.0esr/SHA512SUMS",
