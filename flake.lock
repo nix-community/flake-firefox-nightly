@@ -16,6 +16,21 @@
         "type": "github"
       }
     },
+    "flake-compat": {
+      "locked": {
+        "lastModified": 1680531544,
+        "narHash": "sha256-8qbiDTYb1kGaDADRXTItpcMKQ1TeQVkuof6oEwHUvVA=",
+        "owner": "nix-community",
+        "repo": "flake-compat",
+        "rev": "95e78dc12268c5e4878621845c511077f3798729",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-community",
+        "repo": "flake-compat",
+        "type": "github"
+      }
+    },
     "mozilla": {
       "flake": false,
       "locked": {
@@ -51,6 +66,7 @@
     "root": {
       "inputs": {
         "cachix": "cachix",
+        "flake-compat": "flake-compat",
         "mozilla": "mozilla",
         "nixpkgs": "nixpkgs"
       }

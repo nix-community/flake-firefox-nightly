@@ -5,6 +5,7 @@
     nixpkgs = { url = "github:nixos/nixpkgs/nixos-unstable"; };
     cachix = { url = "github:nixos/nixpkgs/nixos-20.09"; };
     mozilla = { url = "github:mozilla/nixpkgs-mozilla"; flake = false; };
+    flake-compat = { url = "github:nix-community/flake-compat"; };
   };
 
   outputs = inputs:
