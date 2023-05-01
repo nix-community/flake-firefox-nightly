@@ -61,12 +61,12 @@
         "url": "https://download.cdn.mozilla.net/pub/firefox/releases/102.10.0esr/linux-x86_64/en-US/firefox-102.10.0esr.tar.bz2"
       },
       "firefox-nightly-bin": {
-        "chksum": "https://archive.mozilla.org/pub/firefox/nightly/2023/04/2023-04-30-21-21-58-mozilla-central/firefox-114.0a1.en-US.linux-x86_64.checksums",
+        "chksum": "https://archive.mozilla.org/pub/firefox/nightly/2023/05/2023-05-01-09-38-46-mozilla-central/firefox-114.0a1.en-US.linux-x86_64.checksums",
         "chksumSig": null,
-        "sha512": "44476996817357d764800c32ea83fad6e1259baa57e15a1ce71eaef9fa6954aeccef93b2e00c642c83f70506fa75ce3cb6dc4e938ecbdcb518d11030fe60fc4e",
-        "sig": "https://archive.mozilla.org/pub/firefox/nightly/2023/04/2023-04-30-21-21-58-mozilla-central/firefox-114.0a1.en-US.linux-x86_64.tar.bz2.asc",
-        "sigSha512": "4e77e176abebccc0d37afe603c6f29331a0224d02fe61ae5a81e6acd52f56be1eb339b95c1f00a3f4773c420e04fbcf60a344b2386b3f286426705698a53a38a",
-        "url": "https://archive.mozilla.org/pub/firefox/nightly/2023/04/2023-04-30-21-21-58-mozilla-central/firefox-114.0a1.en-US.linux-x86_64.tar.bz2"
+        "sha512": "ce042e520f505ed2296172c4f6d9bc22334f658e993f2cd50ea4fa20e70a29b9af5a927880bee0612badb7732492906c445d13ae17e507294c1410a8235b7616",
+        "sig": "https://archive.mozilla.org/pub/firefox/nightly/2023/05/2023-05-01-09-38-46-mozilla-central/firefox-114.0a1.en-US.linux-x86_64.tar.bz2.asc",
+        "sigSha512": "a279f179ae723a470f51aa8a44bcf80267a6d092a207c40fe21228f9a36c47c0f9e3bc87a294dad9d7febf7310198a861b8147a4256fec6c5c95b4e8a7ed9750",
+        "url": "https://archive.mozilla.org/pub/firefox/nightly/2023/05/2023-05-01-09-38-46-mozilla-central/firefox-114.0a1.en-US.linux-x86_64.tar.bz2"
       }
     }
   }
