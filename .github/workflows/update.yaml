@@ -12,10 +12,9 @@ jobs:
       with:
         fetch-depth: 0 # flakes doesn't work on shallow clones
     - name: install-nix
-      uses: DeterminateSystems/nix-installer-action@main
+      uses: cachix/install-nix-action@v23
       with:
-        extra-conf: |
-          access-tokens = github.com=${{ secrets.GITHUB_TOKEN }}
+        github_access_token: ${{ secrets.GITHUB_TOKEN }}
     - uses: cachix/cachix-action@v12
       with:
         name: nixpkgs-wayland
