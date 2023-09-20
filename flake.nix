@@ -3,6 +3,7 @@
 
   inputs = {
     nixpkgs = { url = "github:nixos/nixpkgs/nixos-unstable"; };
+    lib-aggregate = { url = "github:nix-community/lib-aggregate"; };
     cachix = { url = "github:nixos/nixpkgs/nixos-20.09"; };
     mozilla = { url = "github:mozilla/nixpkgs-mozilla"; flake = false; };
     flake-compat = { url = "github:nix-community/flake-compat"; };
@@ -10,6 +11,8 @@
 
   outputs = inputs:
     let
+      inherit (inputs.lib-aggregate) lib;
+      inherit (inputs) self;
       metadata = builtins.fromJSON (builtins.readFile ./latest.json);
 
       xarch = {
@@ -21,7 +24,6 @@
       genAttrs = names: f: builtins.listToAttrs (map (n: nameValuePair n (f n)) names);
       # supportedSystems = [ "x86_64-linux" "aarch64-linux" ]; # TODO: still not there
       supportedSystems = [ "x86_64-linux" ];
-      forAllSystems = genAttrs supportedSystems;
 
       pkgsFor = pkgs: system:
         import pkgs {
@@ -67,35 +69,29 @@
       };
 
     in
-    rec {
-      devShell = forAllSystems (system:
-        pkgs_.nixpkgs.${system}.mkShell {
-          nativeBuildInputs = []
-            ++ (with pkgs_.cachix.${system}; [ cachix ])
-            ++ (with pkgs_.nixpkgs.${system}; [
-                nixUnstable nix-prefetch nix-build-uncached
-                bash cacert curl git jq mercurial openssh ripgrep
-            ])
-          ;
-        }
-      );
+    lib.flake-utils.eachSystem supportedSystems (system: {
+      devShell = pkgs_.nixpkgs.${system}.mkShell {
+        nativeBuildInputs = []
+          ++ (with pkgs_.cachix.${system}; [ cachix ])
+          ++ (with pkgs_.nixpkgs.${system}; [
+              nixUnstable nix-prefetch nix-build-uncached
+              bash cacert curl git jq mercurial openssh ripgrep
+          ])
+        ;
+      };
 
-      packages = forAllSystems (system: variants system);
+      packages = variants system;
 
-      latest = forAllSystems (system: {
+      latest = {
         variants = impureVariants system;
         versionInfo = impureVersionInfos system;
-      });
+      };
 
-      defaultPackage = forAllSystems (system:
-        pkgs_.nixpkgs."${system}".symlinkJoin {
+      defaultPackage = pkgs_.nixpkgs."${system}".symlinkJoin {
           name = "flake-firefox-nightly";
           paths = builtins.attrValues (variants system);
-        }
-      );
+      };
 
-      checks = forAllSystems (system:
-        builtins.mapAttrs (_: value: runNixOSTestFor system value ) packages.${system}
-      );
-    };
+      checks = builtins.mapAttrs (_: value: runNixOSTestFor system value ) self.packages.${system};
+    });
 }
