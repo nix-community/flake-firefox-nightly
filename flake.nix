@@ -24,74 +24,85 @@
       supportedSystems = [ "x86_64-linux" ];
 
     in
-    lib.flake-utils.eachSystem supportedSystems (system: let
-      pkgsFor = pkgs: overlays:
-        import pkgs {
-          inherit system;
-          config.allowUnfree = true;
-          overlays = [ (import "${inputs.mozilla}/firefox-overlay.nix") ];
-        };
+    lib.flake-utils.eachSystem supportedSystems (system:
+      let
+        pkgsFor = pkgs: overlays:
+          import pkgs {
+            inherit system;
+            config.allowUnfree = true;
+            overlays = [ (import "${inputs.mozilla}/firefox-overlay.nix") ];
+          };
 
-      pkgs_ = lib.genAttrs (builtins.attrNames inputs) (inp: pkgsFor inputs."${inp}" [ ]);
+        pkgs_ = lib.genAttrs (builtins.attrNames inputs) (inp: pkgsFor inputs."${inp}" [ ]);
 
-      fv = pkgs_.nixpkgs.lib.firefoxOverlay.firefoxVariants;
-      variants = (builtins.mapAttrs
-        (n: v:
-          let
-            cv = metadata.${system}."variants".${n};
-            cvi = metadata.${system}."versionInfo".${n};
-          in
+        fv = pkgs_.nixpkgs.lib.firefoxOverlay.firefoxVariants;
+        variants = (builtins.mapAttrs
+          (n: v:
+            let
+              cv = metadata.${system}."variants".${n};
+              cvi = metadata.${system}."versionInfo".${n};
+            in
             pkgs_.nixpkgs.lib.firefoxOverlay.firefoxVersion (cv // { info = cvi; })
-        )
-        (fv)
-      );
+          )
+          (fv)
+        );
 
-      # latest versionInfo outputs for each variant
-      # impure, but by design. this is stored/recorded and then used purely
-      impureVariants =
-        (pkgs_.nixpkgs.lib.firefoxOverlay.firefoxVariants);
+        # latest versionInfo outputs for each variant
+        # impure, but by design. this is stored/recorded and then used purely
+        impureVariants =
+          (pkgs_.nixpkgs.lib.firefoxOverlay.firefoxVariants);
 
-      impureVersionInfos = (builtins.mapAttrs
-        (n: v: pkgs_.nixpkgs.lib.firefoxOverlay.versionInfo (v // { system = mozillaSystemDict.${system};}))
-        (fv)
-      );
+        impureVersionInfos = (builtins.mapAttrs
+          (n: v: pkgs_.nixpkgs.lib.firefoxOverlay.versionInfo (v // { system = mozillaSystemDict.${system}; }))
+          (fv)
+        );
 
-      # https://nixos.org/manual/nixos/unstable/index.html#sec-calling-nixos-tests
-      nixos-lib = import (inputs.nixpkgs + "/nixos/lib") { };
-      runNixOSTestFor = pkg: nixos-lib.runTest {
-        imports = [ ./tests/firefox.nix ];
-        hostPkgs = pkgs_.nixpkgs;
-        defaults = {
-          nixpkgs.pkgs = pkgs_.nixpkgs;
-          # Less dependencies
-          documentation.enable = false;
+        # https://nixos.org/manual/nixos/unstable/index.html#sec-calling-nixos-tests
+        nixos-lib = import (inputs.nixpkgs + "/nixos/lib") { };
+        runNixOSTestFor = pkg: nixos-lib.runTest {
+          imports = [ ./tests/firefox.nix ];
+          hostPkgs = pkgs_.nixpkgs;
+          defaults = {
+            nixpkgs.pkgs = pkgs_.nixpkgs;
+            # Less dependencies
+            documentation.enable = false;
+          };
+          _module.args.firefoxPackage = pkg;
         };
-        _module.args.firefoxPackage = pkg;
-      };
 
-    in {
-      devShell = pkgs_.nixpkgs.mkShell {
-        nativeBuildInputs = []
-          ++ (with pkgs_.cachix; [ cachix ])
-          ++ (with pkgs_.nixpkgs; [
-              nixUnstable nix-prefetch nix-build-uncached
-              bash cacert curl git jq mercurial openssh ripgrep
+      in
+      {
+        devShell = pkgs_.nixpkgs.mkShell {
+          nativeBuildInputs = [ ]
+            ++ (with pkgs_.cachix; [ cachix ])
+            ++ (with pkgs_.nixpkgs; [
+            nixUnstable
+            nix-prefetch
+            nix-build-uncached
+            bash
+            cacert
+            curl
+            git
+            jq
+            mercurial
+            openssh
+            ripgrep
           ])
-        ;
-      };
+          ;
+        };
 
-      packages = variants;
+        packages = variants;
 
-      latest = {
-        variants = impureVariants;
-        versionInfo = impureVersionInfos;
-      };
+        latest = {
+          variants = impureVariants;
+          versionInfo = impureVersionInfos;
+        };
 
-      defaultPackage = pkgs_.nixpkgs.symlinkJoin {
+        defaultPackage = pkgs_.nixpkgs.symlinkJoin {
           name = "flake-firefox-nightly";
           paths = builtins.attrValues (variants);
-      };
+        };
 
-      checks = builtins.mapAttrs (_: value: runNixOSTestFor value ) self.packages.${system};
-    });
+        checks = builtins.mapAttrs (_: value: runNixOSTestFor value) self.packages.${system};
+      });
 }
