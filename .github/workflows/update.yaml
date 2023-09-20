@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
   push:
   schedule:
-    - cron: '*/10 * * * *'
+    - cron: '*/60 * * * *'
 jobs:
   update:
     runs-on: nscloud-ubuntu-22.04-amd64-4x16
