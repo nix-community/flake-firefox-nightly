@@ -11,7 +11,7 @@
   outputs = inputs:
     let
       metadata = builtins.fromJSON (builtins.readFile ./latest.json);
-      
+
       xarch = {
         "x86_64-linux" = "linux-x86_64";
         "aarch64-linux" = "linux-aarch64"; # TODO: doesn't work since Moz doesn't publish 'em
@@ -30,7 +30,7 @@
           overlays = [ (import "${inputs.mozilla}/firefox-overlay.nix") ];
         };
       pkgs_ = genAttrs (builtins.attrNames inputs) (inp: genAttrs supportedSystems (sys: pkgsFor inputs."${inp}" sys));
-      
+
       fv = system: pkgs_.nixpkgs.${system}.lib.firefoxOverlay.firefoxVariants;
       variants = system: (builtins.mapAttrs
         (n: v:
@@ -52,6 +52,20 @@
         (n: v: pkgs_.nixpkgs."${system}".lib.firefoxOverlay.versionInfo (v // { system = xarch.${system};}))
         (fv system)
       );
+
+      # https://nixos.org/manual/nixos/unstable/index.html#sec-calling-nixos-tests
+      nixos-lib = import (inputs.nixpkgs + "/nixos/lib") { };
+      runNixOSTestFor = system: pkg: nixos-lib.runTest {
+        imports = [ ./tests/firefox.nix ];
+        hostPkgs = pkgs_.nixpkgs."${system}";
+        defaults = {
+          nixpkgs.pkgs = pkgs_.nixpkgs."${system}";
+          # Less dependencies
+          documentation.enable = false;
+        };
+        _module.args.firefoxPackage = pkg;
+      };
+
     in
     rec {
       devShell = forAllSystems (system:
@@ -78,6 +92,10 @@
           name = "flake-firefox-nightly";
           paths = builtins.attrValues (variants system);
         }
+      );
+
+      checks = forAllSystems (system:
+        builtins.mapAttrs (_: value: runNixOSTestFor system value ) packages.${system}
       );
     };
 }
