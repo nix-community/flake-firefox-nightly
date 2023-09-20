@@ -6,7 +6,7 @@ on:
     - cron: '*/10 * * * *'
 jobs:
   update:
-    runs-on: ubuntu-latest
+    runs-on: nscloud
     steps:
     - uses: actions/checkout@v3
       with:
