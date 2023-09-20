@@ -6,6 +6,7 @@ on:
     - cron: '*/60 * * * *'
 jobs:
   update:
+    timeout-minutes: 10
     runs-on: nscloud-ubuntu-22.04-amd64-4x16
     steps:
     - uses: actions/checkout@v3
