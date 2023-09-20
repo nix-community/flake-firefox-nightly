@@ -18,7 +18,7 @@
               "xterm -e '${firefoxPackage.unwrapped.binaryName} file://${pkgs.valgrind.doc}/share/doc/valgrind/html/index.html' >&2 &"
           )
           machine.wait_for_window("Valgrind")
-          machine.sleep(40)
+          machine.sleep(20)
           machine.screenshot("screen")
     '';
 
