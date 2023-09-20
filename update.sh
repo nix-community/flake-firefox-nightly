@@ -45,4 +45,6 @@ if find ${out} | grep result; then
   cachix push "${cache}" < "${out}/paths"
 fi
 
+nix flake check -L
+
 git commit ./latest.json -m "firefox-nightly-bin: ${oldversion} -> ${newversion}" || true
