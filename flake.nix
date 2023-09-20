@@ -15,7 +15,7 @@
       inherit (inputs) self;
       metadata = builtins.fromJSON (builtins.readFile ./latest.json);
 
-      xarch = {
+      mozillaSystemDict = {
         "x86_64-linux" = "linux-x86_64";
         "aarch64-linux" = "linux-aarch64"; # TODO: doesn't work since Moz doesn't publish 'em
       };
@@ -51,7 +51,7 @@
         (pkgs_.nixpkgs."${system}".lib.firefoxOverlay.firefoxVariants)
       );
       impureVersionInfos = system: (builtins.mapAttrs
-        (n: v: pkgs_.nixpkgs."${system}".lib.firefoxOverlay.versionInfo (v // { system = xarch.${system};}))
+        (n: v: pkgs_.nixpkgs."${system}".lib.firefoxOverlay.versionInfo (v // { system = mozillaSystemDict.${system};}))
         (fv system)
       );
 
