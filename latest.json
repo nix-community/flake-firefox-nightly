@@ -2,24 +2,28 @@
   "x86_64-linux": {
     "variants": {
       "firefox-beta-bin": {
+        "channel": "beta",
         "name": "Firefox Beta",
         "release": true,
         "version": "118.0b9",
         "wmClass": "firefox-beta"
       },
       "firefox-bin": {
+        "channel": "release",
         "name": "Firefox",
         "release": true,
         "version": "117.0.1",
         "wmClass": "firefox"
       },
       "firefox-esr-bin": {
+        "channel": "release",
         "name": "Firefox ESR",
         "release": true,
         "version": "102.15.1esr",
         "wmClass": "firefox"
       },
       "firefox-nightly-bin": {
+        "channel": "nightly",
         "name": "Firefox Nightly",
         "release": false,
         "version": "119.0a1",
