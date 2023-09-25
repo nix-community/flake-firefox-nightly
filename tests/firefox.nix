@@ -8,14 +8,15 @@
       environment.systemPackages = [
         firefoxPackage
       ];
+      services.journald.console = "/dev/ttyS0";
     };
 
   testScript = ''
       machine.wait_for_x()
 
       with subtest("Wait until Firefox has finished loading the Valgrind docs page"):
-          machine.execute(
-              "xterm -e '${firefoxPackage.unwrapped.binaryName} file://${pkgs.valgrind.doc}/share/doc/valgrind/html/index.html' >&2 &"
+          machine.succeed(
+              "systemd-run -E DISPLAY=:0 ${firefoxPackage.unwrapped.binaryName} file://${pkgs.valgrind.doc}/share/doc/valgrind/html/index.html"
           )
           machine.wait_for_window("Valgrind")
           machine.sleep(20)
