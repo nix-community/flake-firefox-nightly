@@ -16,8 +16,8 @@
 
       with subtest("Wait until Firefox has finished loading the Valgrind docs page"):
           machine.succeed(
-              "systemd-run -E DISPLAY=:0 ${firefoxPackage.unwrapped.binaryName} file://${pkgs.valgrind.doc}/share/doc/valgrind/html/index.html"
-              , timeout=60
+              "systemd-run -E DISPLAY=:0 -E MOZ_LOG=all:3 ${firefoxPackage.unwrapped.binaryName} file://${pkgs.valgrind.doc}/share/doc/valgrind/html/index.html"
+              , timeout=5
           )
           machine.wait_for_window("Valgrind", timeout=120)
           machine.sleep(20)
