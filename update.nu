@@ -32,7 +32,7 @@ print -e "::endgroup::"
 
 print -e $"::group::nix-flake-check"
 do {
-  nix flake check -j1 -L
+  nix flake check --keep-going -j1 -L
 }
 print -e $"::endgroup::"
 
