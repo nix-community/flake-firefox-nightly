@@ -72,23 +72,26 @@
 
       in
       {
-        devShell = pkgs_.nixpkgs.mkShell {
-          nativeBuildInputs = [ ]
-            ++ (with pkgs_.cachix; [ cachix ])
-            ++ (with pkgs_.nixpkgs; [
-            nixUnstable
-            nix-prefetch
-            nix-build-uncached
-            bash
-            cacert
-            curl
-            git
-            jq
-            mercurial
-            openssh
-            ripgrep
-          ])
-          ;
+        devShells = {
+          default = pkgs_.nixpkgs.mkShell {
+            nativeBuildInputs = [ ]
+              ++ (with pkgs_.cachix; [ cachix ])
+              ++ (with pkgs_.nixpkgs; [
+              nixUnstable
+              nix-prefetch
+              nix-build-uncached
+              bash
+              cacert
+              curl
+              git
+              jq
+              mercurial
+              nushell
+              openssh
+              ripgrep
+            ])
+            ;
+          };
         };
 
         packages = variants;

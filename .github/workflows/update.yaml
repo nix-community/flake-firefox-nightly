@@ -18,6 +18,7 @@ jobs:
         github_access_token: ${{ secrets.GITHUB_TOKEN }}
         extra_nix_config: |
           system-features = kvm nixos-test
+          experimental-features = nix-command flakes
     - uses: cachix/cachix-action@v12
       with:
         name: nixpkgs-wayland
@@ -26,13 +27,10 @@ jobs:
       run: |
         git config --global user.name 'Cole Botkens'
         git config --global user.email 'cole.mickens+colebot@gmail.com'
+    - name: pre-load-devshell
+      run: |
+        nix build '.#devShells.x86_64-linux.default'
     - name: update
-      env:
-        CACHIX_SIGNING_KEY: "${{ secrets.cachix_key_nixpkgs_wayland }}"
       run: |
         set -xeuo pipefail
-        nix develop -c nix flake update --commit-lock-file
-        nix develop -c ./update.sh
-    - name: push
-      run: |
-        git push origin HEAD
+        nix develop -c ./update.nu
