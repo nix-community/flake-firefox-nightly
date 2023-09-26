@@ -94,16 +94,18 @@
           };
         };
 
-        packages = variants;
+        packages = builtins.trace (builtins.attrNames variants) ({
+          default = pkgs_.nixpkgs.linkFarm "firefox-variants" [
+            { name = "firefox-bin"; path = variants.firefox-bin; }
+            { name = "firefox-esr-bin"; path = variants.firefox-esr-bin; }
+            { name = "firefox-nightly-bin"; path = variants.firefox-nightly-bin; }
+            { name = "firefox-beta-bin"; path = variants.firefox-beta-bin; }
+          ];
+        } // variants);
 
         latest = {
           variants = impureVariants;
           versionInfo = impureVersionInfos;
-        };
-
-        defaultPackage = pkgs_.nixpkgs.symlinkJoin {
-          name = "flake-firefox-nightly";
-          paths = builtins.attrValues (variants);
         };
 
         checks = builtins.mapAttrs (_: value: runNixOSTestFor value) self.packages.${system};
