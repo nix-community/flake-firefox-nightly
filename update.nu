@@ -30,6 +30,12 @@ let commitmsg = do {
 }
 print -e "::endgroup::"
 
+print -e $"::group::nix-build"
+do {
+  nix build . --keep-going -L
+}
+print -e $"::endgroup::"
+
 print -e $"::group::nix-flake-check"
 do {
   nix flake check --keep-going -j1 -L
