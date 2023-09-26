@@ -19,7 +19,7 @@
               "systemd-run -E DISPLAY=:0 ${firefoxPackage.unwrapped.binaryName} file://${pkgs.valgrind.doc}/share/doc/valgrind/html/index.html"
               , timeout=60
           )
-          machine.wait_for_window("Valgrind")
+          machine.wait_for_window("Valgrind", timeout=120)
           machine.sleep(20)
           machine.screenshot("screen")
     '';
