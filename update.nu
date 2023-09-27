@@ -26,7 +26,7 @@ let commitmsg = do {
   
   print -e $"::notice ::newversion=($newversion)"
 
-  return $"firefox-nightly-bin: ($oldversion) -> ($newversion)"
+  $"firefox-nightly-bin: ($oldversion) -> ($newversion)"
 }
 print -e "::endgroup::"
 
