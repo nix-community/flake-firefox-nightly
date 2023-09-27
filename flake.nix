@@ -94,7 +94,7 @@
           };
         };
 
-        packages = builtins.trace (builtins.attrNames variants) ({
+        packages = ({
           default = pkgs_.nixpkgs.linkFarm "firefox-variants" [
             { name = "firefox-bin"; path = variants.firefox-bin; }
             { name = "firefox-esr-bin"; path = variants.firefox-esr-bin; }
