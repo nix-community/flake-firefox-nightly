@@ -48,8 +48,10 @@ print -e $"::endgroup::"
 print -e $"::group::git-commit-push"
 if ("GITHUB_ACTIONS" in $env) {
   print -e $"::notice ::commitmsg=($commitmsg)"
-  git commit ./latest.json -m $commitmsg
-  git push origin HEAD
+  do -i {
+    git commit ./latest.json -m $commitmsg
+    git push origin HEAD
+  }
 } else {
   print -e $"skipping git actions, we're not running in GitHub Actions"
 }
