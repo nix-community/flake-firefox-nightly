@@ -37,8 +37,11 @@ do {
 print -e $"::endgroup::"
 
 print -e $"::group::nix-flake-check"
-do {
+try {
   nix flake check --keep-going -j1 -L
+  print -e $"::notice ::nix flake check = pass"
+} catch {
+  print -e $"::warning ::nix flake check = FAIL"
 }
 print -e $"::endgroup::"
 
