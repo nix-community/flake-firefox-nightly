@@ -63,6 +63,10 @@
           imports = [ ./tests/firefox.nix ];
           hostPkgs = pkgs_.nixpkgs;
           defaults = {
+            # reuse the already evaluated nixpkgs
+            # https://search.nixos.org/options?channel=unstable&show=nixpkgs.pkgs
+            # with 3.9 s without 4.9 s both with a dirty tree
+            # `time nix build ".#checks.x86_64-linux.firefox-bin"`
             nixpkgs.pkgs = pkgs_.nixpkgs;
             # Less dependencies
             documentation.enable = false;
