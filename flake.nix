@@ -112,6 +112,6 @@
           versionInfo = impureVersionInfos;
         };
 
-        checks = builtins.mapAttrs (_: value: runNixOSTestFor value) self.packages.${system};
+        checks = builtins.mapAttrs (_: value: runNixOSTestFor value) (builtins.removeAttrs self.packages.${system} [ "default" ]) /* # is a link farm */ ;
       });
 }
