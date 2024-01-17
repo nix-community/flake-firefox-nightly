@@ -4,7 +4,7 @@
   inputs = {
     nixpkgs = { url = "github:nixos/nixpkgs/nixos-unstable"; };
     lib-aggregate = { url = "github:nix-community/lib-aggregate"; };
-    cachix = { url = "github:nixos/nixpkgs/nixos-20.09"; };
+    cachix = { url = "github:nixos/nixpkgs/nixos-unstable"; };
     mozilla = { url = "github:mozilla/nixpkgs-mozilla"; flake = false; };
     flake-compat = { url = "github:nix-community/flake-compat"; };
   };
