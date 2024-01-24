@@ -35,7 +35,7 @@ mechanisms to ensure they don't wind up stuck on an old nightly build.
 Using `nixpkgs-mozilla` already circumvents some of this philosophy by requiring
 you to update your system/profile frequently to get new builds.
 
-In some (hopefully minor0) sense, this flake exacerbates that problem:
+In some (hopefully minor) sense, this flake exacerbates that problem:
 
 1. It requires users to update their flakes inputs (though this was already
    true for users that were using `niv` etc to pin `nixpkgs-mozilla`).
