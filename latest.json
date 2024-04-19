@@ -5,7 +5,7 @@
         "channel": "beta",
         "name": "Firefox Beta",
         "release": true,
-        "version": "126.0b2",
+        "version": "126.0b3",
         "wmClass": "firefox-beta"
       },
       "firefox-bin": {
@@ -32,15 +32,15 @@
     },
     "versionInfo": {
       "firefox-beta-bin": {
-        "chksum": "https://download.cdn.mozilla.net/pub/firefox/releases/126.0b2/SHA512SUMS",
-        "chksumSha256": "14c31b0e293f83e9d7b64d11f75b404123922accfbf362e9038c4efeedeb8df2",
-        "chksumSig": "https://download.cdn.mozilla.net/pub/firefox/releases/126.0b2/SHA512SUMS.asc",
-        "chksumSigSha256": "c3927e5de5621eb4d5fab4c019b3181556ea6f6c45aaca3c2c5520ea49689a92",
-        "file": "linux-x86_64/en-US/firefox-126.0b2.tar.bz2",
-        "sha512": "d8e394e5cfd37c63ac8f94a06e0c2be88efa0452b7efa15f0dc10133a0a459b63d93779b0f0852574103788a49982ea791a1b3c6e244a2005b7a0961d908eec3",
+        "chksum": "https://download.cdn.mozilla.net/pub/firefox/releases/126.0b3/SHA512SUMS",
+        "chksumSha256": "02cd6e237ab7fd08458dddd80785418436654b5e11e41eeda111acb489ca1a0e",
+        "chksumSig": "https://download.cdn.mozilla.net/pub/firefox/releases/126.0b3/SHA512SUMS.asc",
+        "chksumSigSha256": "b25882add1d0a5eab9350045444716c7106cd8dbf2a2651ed49fac1e9544948b",
+        "file": "linux-x86_64/en-US/firefox-126.0b3.tar.bz2",
+        "sha512": "7670ea7a3da20c6bf88538ec8ea4f004b3fe17db85a52402447004c2a3a92fb039a52509ee27e4088fdae1591d9d7b3934c90cc0abde2695745f2e60764fbcad",
         "sig": null,
         "sigSha512": null,
-        "url": "https://download.cdn.mozilla.net/pub/firefox/releases/126.0b2/linux-x86_64/en-US/firefox-126.0b2.tar.bz2"
+        "url": "https://download.cdn.mozilla.net/pub/firefox/releases/126.0b3/linux-x86_64/en-US/firefox-126.0b3.tar.bz2"
       },
       "firefox-bin": {
         "chksum": "https://download.cdn.mozilla.net/pub/firefox/releases/125.0.1/SHA512SUMS",
