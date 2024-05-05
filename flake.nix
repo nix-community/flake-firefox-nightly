@@ -81,7 +81,7 @@
             nativeBuildInputs = [ ]
               ++ (with pkgs_.cachix; [ cachix ])
               ++ (with pkgs_.nixpkgs; [
-              nixUnstable
+              nixVersions.latest
               nix-prefetch
               nix-build-uncached
               bash
