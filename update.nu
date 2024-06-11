@@ -17,7 +17,7 @@ let commitmsg = do {
   
   print -e $"::notice ::oldversion=($oldversion)"
   
-  rm latest.json
+  rm -f latest.json
   nix eval --impure '.#latest' --json | jq out> latest.json
   
   let newversion = (cat latest.json
