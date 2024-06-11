@@ -26,7 +26,7 @@
         "channel": "nightly",
         "name": "Firefox Nightly",
         "release": false,
-        "version": "128.0a1",
+        "version": "129.0a1",
         "wmClass": "firefox-nightly"
       }
     },
@@ -65,12 +65,12 @@
         "url": "https://download.cdn.mozilla.net/pub/firefox/releases/115.11.0esr/linux-x86_64/en-US/firefox-115.11.0esr.tar.bz2"
       },
       "firefox-nightly-bin": {
-        "chksum": "https://archive.mozilla.org/pub/firefox/nightly/2024/06/2024-06-09-20-51-51-mozilla-central/firefox-128.0a1.en-US.linux-x86_64.checksums",
+        "chksum": "https://archive.mozilla.org/pub/firefox/nightly/2024/06/2024-06-10-21-30-24-mozilla-central/firefox-129.0a1.en-US.linux-x86_64.checksums",
         "chksumSig": null,
-        "sha512": "0bd7136f27be60e65452b571aeb4ba3f3db63227ad0b15467a7c1525eb7d59d0120b5f925cdb577d67f4d66cf232e44cedb796e835ddbf0593edd42359d11831",
-        "sig": "https://archive.mozilla.org/pub/firefox/nightly/2024/06/2024-06-09-20-51-51-mozilla-central/firefox-128.0a1.en-US.linux-x86_64.tar.bz2.asc",
-        "sigSha512": "6d473a459bc75f5db742d733c93ab0feec542967644f6326f994378305c59c12f32ee40e844c83bc04b3927bb1cecb473901ba8e8143326c4f3d2de3a2804e95",
-        "url": "https://archive.mozilla.org/pub/firefox/nightly/2024/06/2024-06-09-20-51-51-mozilla-central/firefox-128.0a1.en-US.linux-x86_64.tar.bz2"
+        "sha512": "812a08d0b2b559b872065f33d0a2c2e8f7d0a16b16b7ca546a8cba47983aecd5732b9d6e0994401a2643c5cb07c4b31fe0c19aefd3665c8fcfc6b470ba30d196",
+        "sig": "https://archive.mozilla.org/pub/firefox/nightly/2024/06/2024-06-10-21-30-24-mozilla-central/firefox-129.0a1.en-US.linux-x86_64.tar.bz2.asc",
+        "sigSha512": "cc30c75f498dbb680a4f014993723e16bfd8cc795d9bc173d5c43ce4c9447566ea2efd779fa4ff7b69f7af36239ff197e6e486a5ee64b362b8ea9020d73bcf8a",
+        "url": "https://archive.mozilla.org/pub/firefox/nightly/2024/06/2024-06-10-21-30-24-mozilla-central/firefox-129.0a1.en-US.linux-x86_64.tar.bz2"
       }
     }
   }
