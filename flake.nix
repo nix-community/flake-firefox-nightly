@@ -13,15 +13,17 @@
     let
       inherit (inputs.lib-aggregate) lib;
       inherit (inputs) self;
-      metadata = builtins.fromJSON (builtins.readFile ./latest.json);
+      latestJson = builtins.fromJSON (builtins.readFile ./latest.json);
 
       mozillaSystemDict = {
         "x86_64-linux" = "linux-x86_64";
-        "aarch64-linux" = "linux-aarch64"; # TODO: doesn't work since Moz doesn't publish 'em
+        "aarch64-linux" = "linux-aarch64";
       };
 
-      # supportedSystems = [ "x86_64-linux" "aarch64-linux" ]; # TODO: still not there
-      supportedSystems = [ "x86_64-linux" ];
+      supportedSystems = [
+        "x86_64-linux"
+        "aarch64-linux"
+      ];
 
     in
     lib.flake-utils.eachSystem supportedSystems (system:
@@ -35,27 +37,36 @@
 
         pkgs_ = lib.genAttrs (builtins.attrNames inputs) (inp: pkgsFor inputs."${inp}" [ ]);
 
-        fv = pkgs_.nixpkgs.lib.firefoxOverlay.firefoxVariants;
-        variants = (builtins.mapAttrs
-          (n: v:
-            let
-              cv = metadata.${system}."variants".${n};
-              cvi = metadata.${system}."versionInfo".${n};
-            in
-            pkgs_.nixpkgs.lib.firefoxOverlay.firefoxVersion (cv // { info = cvi; })
-          )
-          (fv)
-        );
+        # get the variants we support from upstream, except filter on not-x86_64-linux
+        # as there are no release=true releases published for aarch64-linux, only nightly
+        variants =
+          let variants = pkgs_.nixpkgs.lib.firefoxOverlay.firefoxVariants; in
+            if (system == "x86_64-linux")
+            then variants
+            else (pkgs_.nixpkgs.lib.filterAttrs (n: v: lib.hasInfix "nightly" n) variants);
 
         # latest versionInfo outputs for each variant
         # impure, but by design. this is stored/recorded and then used purely
-        impureVariants =
-          (pkgs_.nixpkgs.lib.firefoxOverlay.firefoxVariants);
-
         impureVersionInfos = (builtins.mapAttrs
-          (n: v: pkgs_.nixpkgs.lib.firefoxOverlay.versionInfo (v // { system = mozillaSystemDict.${system}; }))
-          (fv)
+          (n: v: pkgs_.nixpkgs.lib.firefoxOverlay.versionInfo
+            (builtins.trace (v // { system = mozillaSystemDict.${system}; })
+            (v // { system = mozillaSystemDict.${system}; })
+            )
+          )
+          (variants)
         );
+
+        latestVersions = (builtins.mapAttrs
+          (n: v:
+            let
+              cv = latestJson.${system}."variants".${n};
+              cvi = latestJson.${system}."versionInfo".${n};
+            in
+            pkgs_.nixpkgs.lib.firefoxOverlay.firefoxVersion (cv // { info = cvi; })
+          )
+          (variants)
+        );
+
 
         # https://nixos.org/manual/nixos/unstable/index.html#sec-calling-nixos-tests
         nixos-lib = import (inputs.nixpkgs + "/nixos/lib") { };
@@ -100,18 +111,18 @@
 
         packages = ({
           default = pkgs_.nixpkgs.linkFarm "firefox-variants" [
-            { name = "firefox-bin"; path = variants.firefox-bin; }
-            { name = "firefox-esr-bin"; path = variants.firefox-esr-bin; }
-            { name = "firefox-nightly-bin"; path = variants.firefox-nightly-bin; }
-            { name = "firefox-beta-bin"; path = variants.firefox-beta-bin; }
+            { name = "firefox-bin"; path = latestVersions.firefox-bin; }
+            { name = "firefox-esr-bin"; path = latestVersions.firefox-esr-bin; }
+            { name = "firefox-nightly-bin"; path = latestVersions.firefox-nightly-bin; }
+            { name = "firefox-beta-bin"; path = latestVersions.firefox-beta-bin; }
           ];
-        } // variants);
+        } // latestVersions);
 
         latest = {
-          variants = impureVariants;
+          variants = variants;
           versionInfo = impureVersionInfos;
         };
 
-        checks = builtins.mapAttrs (_: value: runNixOSTestFor value) (builtins.removeAttrs self.packages.${system} [ "default" ]) /* # is a link farm */ ;
+        checks = builtins.mapAttrs (_: value: runNixOSTestFor value) (builtins.removeAttrs self.packages.${system} [ "default" ]);
       });
 }
