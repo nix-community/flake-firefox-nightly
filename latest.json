@@ -19,7 +19,7 @@
         "channel": "release",
         "name": "Firefox ESR",
         "release": true,
-        "version": "128.3.0esr",
+        "version": "128.3.1esr",
         "wmClass": "firefox"
       },
       "firefox-nightly-bin": {
@@ -54,15 +54,15 @@
         "url": "https://download.cdn.mozilla.net/pub/firefox/releases/131.0.2/linux-x86_64/en-US/firefox-131.0.2.tar.bz2"
       },
       "firefox-esr-bin": {
-        "chksum": "https://download.cdn.mozilla.net/pub/firefox/releases/128.3.0esr/SHA512SUMS",
-        "chksumSha256": "4445ffcdd00f46d4c0cb15b0d12c706b570334c91e028f8247a4e9cffa6e328d",
-        "chksumSig": "https://download.cdn.mozilla.net/pub/firefox/releases/128.3.0esr/SHA512SUMS.asc",
-        "chksumSigSha256": "3725695b7b286d582adcc2c199291b54571ff8830170921298d8afa5c7c94a21",
-        "file": "linux-x86_64/en-US/firefox-128.3.0esr.tar.bz2",
-        "sha512": "f9d549f820732658d3e4f23c19d5cb8ee303095564147fa777865f854bb43af5e3d7e2e91115343cd10f876f562e29239c02389376c5ee3b6dd0fd1355513fbd",
+        "chksum": "https://download.cdn.mozilla.net/pub/firefox/releases/128.3.1esr/SHA512SUMS",
+        "chksumSha256": "252951a2c87d05105cc8da76191d28df057960e0937a815528786e7c8b66cbf9",
+        "chksumSig": "https://download.cdn.mozilla.net/pub/firefox/releases/128.3.1esr/SHA512SUMS.asc",
+        "chksumSigSha256": "113d78761d62ac1bad07d015f5f62caeebac42c2fab2ab3c36af3dcaca9f225f",
+        "file": "linux-x86_64/en-US/firefox-128.3.1esr.tar.bz2",
+        "sha512": "232428f07ea1b7efc4542dd09d2e78b71a1f3207eb8f5e8e40d66ddf83c8e30678abd4ec3eb0f611217b55952bbc797e75e688052cb0d90e5200003e034ea4af",
         "sig": null,
         "sigSha512": null,
-        "url": "https://download.cdn.mozilla.net/pub/firefox/releases/128.3.0esr/linux-x86_64/en-US/firefox-128.3.0esr.tar.bz2"
+        "url": "https://download.cdn.mozilla.net/pub/firefox/releases/128.3.1esr/linux-x86_64/en-US/firefox-128.3.1esr.tar.bz2"
       },
       "firefox-nightly-bin": {
         "chksum": "https://archive.mozilla.org/pub/firefox/nightly/2024/10/2024-10-09-09-46-37-mozilla-central/firefox-133.0a1.en-US.linux-x86_64.checksums",
