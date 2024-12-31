@@ -65,12 +65,12 @@
         "url": "https://download.cdn.mozilla.net/pub/firefox/releases/128.5.2esr/linux-x86_64/en-US/firefox-128.5.2esr.tar.bz2"
       },
       "firefox-nightly-bin": {
-        "chksum": "https://archive.mozilla.org/pub/firefox/nightly/2024/12/2024-12-30-20-52-00-mozilla-central/firefox-135.0a1.en-US.linux-x86_64.checksums",
+        "chksum": "https://archive.mozilla.org/pub/firefox/nightly/2024/12/2024-12-31-09-54-22-mozilla-central/firefox-135.0a1.en-US.linux-x86_64.checksums",
         "chksumSig": null,
-        "sha512": "9f66e7b8c087fd8a7549b694fc0257b5dec1a63ffb43637d9385b87871be6933a612b73a01e3930ef711d21d776218a795b789d86d45df35d97a6e8506fef9a1",
-        "sig": "https://archive.mozilla.org/pub/firefox/nightly/2024/12/2024-12-30-20-52-00-mozilla-central/firefox-135.0a1.en-US.linux-x86_64.tar.xz.asc",
-        "sigSha512": "1c530aff9b7ce8c082833687060761e87d7ceb4f2992ded4e41005b2b6543694b8ba5ef7f10317e94a9d80b0b6aa1f885099cc1e0f230cae46e4d366b22e0f95",
-        "url": "https://archive.mozilla.org/pub/firefox/nightly/2024/12/2024-12-30-20-52-00-mozilla-central/firefox-135.0a1.en-US.linux-x86_64.tar.xz"
+        "sha512": "f1ead16031697885bbd9491bab3f1dd0fe594dc1cc1bbaf24ef6b669ce62f93ab0f2b0dd23936cddb628913d66694f73ef908333c04a08abc621b09ec122181b",
+        "sig": "https://archive.mozilla.org/pub/firefox/nightly/2024/12/2024-12-31-09-54-22-mozilla-central/firefox-135.0a1.en-US.linux-x86_64.tar.xz.asc",
+        "sigSha512": "fd8e4be4d0178b014144e6cdccca87742415a58951c0b429356bff0229f2092b6ce7098c6eb75c7bf8608e0451906a3250512d7c6ccbdc82f678617f1b0120c1",
+        "url": "https://archive.mozilla.org/pub/firefox/nightly/2024/12/2024-12-31-09-54-22-mozilla-central/firefox-135.0a1.en-US.linux-x86_64.tar.xz"
       }
     }
   }
