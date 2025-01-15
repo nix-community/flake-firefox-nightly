@@ -65,12 +65,12 @@
         "url": "https://download.cdn.mozilla.net/pub/firefox/releases/128.6.0esr/linux-x86_64/en-US/firefox-128.6.0esr.tar.bz2"
       },
       "firefox-nightly-bin": {
-        "chksum": "https://archive.mozilla.org/pub/firefox/nightly/2025/01/2025-01-14-21-23-41-mozilla-central/firefox-136.0a1.en-US.linux-x86_64.checksums",
+        "chksum": "https://archive.mozilla.org/pub/firefox/nightly/2025/01/2025-01-15-04-28-32-mozilla-central/firefox-136.0a1.en-US.linux-x86_64.checksums",
         "chksumSig": null,
-        "sha512": "848924797417ba9d7bf7ba7ee8e1520b80662294c0abf67271877a692b818e4b656675370c2acaf54b2ab49ec419037aad10cc5080ba448920bb8bda954b99e5",
-        "sig": "https://archive.mozilla.org/pub/firefox/nightly/2025/01/2025-01-14-21-23-41-mozilla-central/firefox-136.0a1.en-US.linux-x86_64.tar.xz.asc",
-        "sigSha512": "ff4647559693c09f8abee608a467e1b6c51d17e8ec79c12380e96f461b0f2b522e8d4585417e44811b556d27eda65a895234ebdf9ddc41eedce94e257430878a",
-        "url": "https://archive.mozilla.org/pub/firefox/nightly/2025/01/2025-01-14-21-23-41-mozilla-central/firefox-136.0a1.en-US.linux-x86_64.tar.xz"
+        "sha512": "96446b174da272b0381b3a3e9e7e1ede21089e8a6d790dca41fe8a2c11578a9422496311ff3af3a1c33238cbf7fb7fb12ea5765512f01f9ff36c283a372f5ee4",
+        "sig": "https://archive.mozilla.org/pub/firefox/nightly/2025/01/2025-01-15-04-28-32-mozilla-central/firefox-136.0a1.en-US.linux-x86_64.tar.xz.asc",
+        "sigSha512": "17758c4e367f5d426c997f92ccf5b368ac875be4625e17e05ca87e6969c9f12f088506542c661726e12279d952747b17d36f2f61f460f3e5103360a2483d92e7",
+        "url": "https://archive.mozilla.org/pub/firefox/nightly/2025/01/2025-01-15-04-28-32-mozilla-central/firefox-136.0a1.en-US.linux-x86_64.tar.xz"
       }
     }
   }
