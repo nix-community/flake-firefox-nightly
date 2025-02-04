@@ -5,7 +5,7 @@
         "channel": "beta",
         "name": "Firefox Beta",
         "release": true,
-        "version": "135.0b9",
+        "version": "136.0b1",
         "wmClass": "firefox-beta"
       },
       "firefox-bin": {
@@ -32,15 +32,15 @@
     },
     "versionInfo": {
       "firefox-beta-bin": {
-        "chksum": "https://download.cdn.mozilla.net/pub/firefox/releases/135.0b9/SHA512SUMS",
-        "chksumSha256": "1a3ec8bfaf1d76f20c9a51ff9b63587d2132a17cee88fdfe43aa44912f9ff614",
-        "chksumSig": "https://download.cdn.mozilla.net/pub/firefox/releases/135.0b9/SHA512SUMS.asc",
-        "chksumSigSha256": "d6825ce874b641ee807dd8d877e95f8eaed75904e1b49f63432114ec0ecd3b7b",
-        "file": "linux-x86_64/en-US/firefox-135.0b9.tar.xz",
-        "sha512": "3fa0bd5fb9f6faf64b8568ccaf14543d72eba0dede2aa1fa6a13a269e79690f00a9eee07534544928f13870357ece28619a0a8baa31aea62ff18b680ffb1d155",
+        "chksum": "https://download.cdn.mozilla.net/pub/firefox/releases/136.0b1/SHA512SUMS",
+        "chksumSha256": "e69cbe74bedae4c99469e6064442d2047a615f5c0a6ae9405062666f4d8d8a85",
+        "chksumSig": "https://download.cdn.mozilla.net/pub/firefox/releases/136.0b1/SHA512SUMS.asc",
+        "chksumSigSha256": "9c6b7d8ae64aa0674086fdec62cfced5c5d139983d0abe734bb17d8a34195852",
+        "file": "linux-x86_64/en-US/firefox-136.0b1.tar.xz",
+        "sha512": "e35bd947bf1320b16ed69150675c7ef059fb6818e8c6e955fd6c68962c5cab43dfbf953efbcd0b47c2a9f23efedd6cdeac73b0252fed643df9bf813e7d2c3318",
         "sig": null,
         "sigSha512": null,
-        "url": "https://download.cdn.mozilla.net/pub/firefox/releases/135.0b9/linux-x86_64/en-US/firefox-135.0b9.tar.xz"
+        "url": "https://download.cdn.mozilla.net/pub/firefox/releases/136.0b1/linux-x86_64/en-US/firefox-136.0b1.tar.xz"
       },
       "firefox-bin": {
         "chksum": "https://download.cdn.mozilla.net/pub/firefox/releases/135.0/SHA512SUMS",
@@ -65,12 +65,12 @@
         "url": "https://download.cdn.mozilla.net/pub/firefox/releases/128.7.0esr/linux-x86_64/en-US/firefox-128.7.0esr.tar.bz2"
       },
       "firefox-nightly-bin": {
-        "chksum": "https://archive.mozilla.org/pub/firefox/nightly/2025/02/2025-02-04-09-32-33-mozilla-central/firefox-137.0a1.en-US.linux-x86_64.checksums",
+        "chksum": "https://archive.mozilla.org/pub/firefox/nightly/2025/02/2025-02-04-14-56-11-mozilla-central/firefox-137.0a1.en-US.linux-x86_64.checksums",
         "chksumSig": null,
-        "sha512": "969624d4bd5e3e1d0842809fc0b1aeeebeda0c1c3c1b837b10d1caae799ab4dab95473cc67e3bfafef36abfc606f3a8adb3dc76a3538d9f0e52059814c2da4cc",
-        "sig": "https://archive.mozilla.org/pub/firefox/nightly/2025/02/2025-02-04-09-32-33-mozilla-central/firefox-137.0a1.en-US.linux-x86_64.tar.xz.asc",
-        "sigSha512": "c1b20a9e268d03b9e968536c44538a1799d2049ac5a5a215bac05512bdfecddbe7066f17dcac2b39e7180ff8e4221fa3fb2aa97c5572508f7e91994b19cbdf07",
-        "url": "https://archive.mozilla.org/pub/firefox/nightly/2025/02/2025-02-04-09-32-33-mozilla-central/firefox-137.0a1.en-US.linux-x86_64.tar.xz"
+        "sha512": "5740f4aa6280495fbf62803d3d71e28bc6c1e2d368a188e39f6c4616fd32ea07b774116f6ce0c7ec5827561d9481891ed3cc6d1c1f3e43d1b10fa6ad3b808183",
+        "sig": "https://archive.mozilla.org/pub/firefox/nightly/2025/02/2025-02-04-14-56-11-mozilla-central/firefox-137.0a1.en-US.linux-x86_64.tar.xz.asc",
+        "sigSha512": "be80ecb0662af1ab8d396f9ad5661cef4ccc596efde65603e7974279af2b58ec0163972bb299efe0480d306938336c71106acfe7e849a049df190c1a1b7e0685",
+        "url": "https://archive.mozilla.org/pub/firefox/nightly/2025/02/2025-02-04-14-56-11-mozilla-central/firefox-137.0a1.en-US.linux-x86_64.tar.xz"
       }
     }
   }
