@@ -26,7 +26,7 @@
         "channel": "nightly",
         "name": "Firefox Nightly",
         "release": false,
-        "version": "136.0a1",
+        "version": "137.0a1",
         "wmClass": "firefox-nightly"
       }
     },
@@ -65,12 +65,12 @@
         "url": "https://download.cdn.mozilla.net/pub/firefox/releases/128.6.0esr/linux-x86_64/en-US/firefox-128.6.0esr.tar.bz2"
       },
       "firefox-nightly-bin": {
-        "chksum": "https://archive.mozilla.org/pub/firefox/nightly/2025/02/2025-02-03-09-52-40-mozilla-central/firefox-136.0a1.en-US.linux-x86_64.checksums",
+        "chksum": "https://archive.mozilla.org/pub/firefox/nightly/2025/02/2025-02-03-21-14-56-mozilla-central/firefox-137.0a1.en-US.linux-x86_64.checksums",
         "chksumSig": null,
-        "sha512": "297ec49b1c6840a6ce393edeb4d0fbf6bcc4d52839e38ba09c40182dca86997ef87a00dd6a5f5d22706e750659d1e48a676f6f4861fb81c1b2c2c35e2a52066d",
-        "sig": "https://archive.mozilla.org/pub/firefox/nightly/2025/02/2025-02-03-09-52-40-mozilla-central/firefox-136.0a1.en-US.linux-x86_64.tar.xz.asc",
-        "sigSha512": "f20ffc8a93d84c0929fae309dafd28a2642c855fb060f7babeb6c1eaed606ebbaba6875669941703a66cb204c774e4ad93fc8113b71f9ea290c6d1ca41395a40",
-        "url": "https://archive.mozilla.org/pub/firefox/nightly/2025/02/2025-02-03-09-52-40-mozilla-central/firefox-136.0a1.en-US.linux-x86_64.tar.xz"
+        "sha512": "3469489b697ae6c064e6d5c9017327f565f032b5a45e5317d084b5a2d1ef4c3f0b73db7329a2b5df4bb01aaf7d02819554ce58b414927353352b86a1f0850494",
+        "sig": "https://archive.mozilla.org/pub/firefox/nightly/2025/02/2025-02-03-21-14-56-mozilla-central/firefox-137.0a1.en-US.linux-x86_64.tar.xz.asc",
+        "sigSha512": "6e45a50207acf7d77fcf8049c2827917a04aebb9934fa5912f6cccec7b426155c15ec7d80c931dd4f8604e0cb19d1c17a118d4fb46c944dd0e602acc12aa5ea7",
+        "url": "https://archive.mozilla.org/pub/firefox/nightly/2025/02/2025-02-03-21-14-56-mozilla-central/firefox-137.0a1.en-US.linux-x86_64.tar.xz"
       }
     }
   }
