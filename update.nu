@@ -1,8 +1,4 @@
 #!/usr/bin/env nu
-
-let DIR = ($env.FILE_PWD)
-let cache = "nixpkgs-wayland"
-
 print -e $"::group::flake-lock-update"
 do {
   nix flake lock --recreate-lock-file --commit-lock-file
@@ -12,16 +8,15 @@ print -e $"::endgroup::"
 print -e $"::group::firefox-update"
 let commitmsg = do {
   let oldversion = (cat latest.json
-    | jq -r '.["x86_64-linux"].versionInfo["firefox-nightly-bin"].chksum'
+    | jq -r '."x86_64-linux".nightly.version'
     | grep -Eo '[0-9]{4}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}')
   
   print -e $"::notice ::oldversion=($oldversion)"
-  
-  rm latest.json
-  nix eval --impure '.#latest' --json | jq out> latest.json
+
+  ./generate.nu
   
   let newversion = (cat latest.json
-    | jq -r '.["x86_64-linux"].versionInfo["firefox-nightly-bin"].chksum'
+    | jq -r '."x86_64-linux".nightly.version'
     | grep -Eo '[0-9]{4}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}')
   
   print -e $"::notice ::newversion=($newversion)"
