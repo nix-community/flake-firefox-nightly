@@ -1,4 +1,25 @@
 {
+  "aarch64-linux": {
+    "variants": {
+      "firefox-nightly-bin": {
+        "channel": "nightly",
+        "name": "Firefox Nightly",
+        "release": false,
+        "version": "129.0a1",
+        "wmClass": "firefox-nightly"
+      }
+    },
+    "versionInfo": {
+      "firefox-nightly-bin": {
+        "chksum": "https://archive.mozilla.org/pub/firefox/nightly/2024/06/2024-06-10-21-30-24-mozilla-central/firefox-129.0a1.en-US.linux-aarch64.checksums",
+        "chksumSig": null,
+        "sha512": "a3d8c9f3e2d7a284b967bea4d7fedbd35903b85382b64fa487d0cebefcaaf641a5d166a345466fff8bcfe95fcf7948e47fa95b826b308012ada997e8e30302ea",
+        "sig": "https://archive.mozilla.org/pub/firefox/nightly/2024/06/2024-06-10-21-30-24-mozilla-central/firefox-129.0a1.en-US.linux-aarch64.tar.bz2.asc",
+        "sigSha512": "09b7a0aa9eb0a32d48c97e11a6cc8503e1ece179f0651c2751097a16dad551f9149e7c1ba7cf7c90be85bdec7139e4d77c4116fc903886daec1f2e5ea7f1cfe4",
+        "url": "https://archive.mozilla.org/pub/firefox/nightly/2024/06/2024-06-10-21-30-24-mozilla-central/firefox-129.0a1.en-US.linux-aarch64.tar.bz2"
+      }
+    }
+  },
   "x86_64-linux": {
     "variants": {
       "firefox-beta-bin": {
