@@ -15,6 +15,11 @@
       "url": "https://download.cdn.mozilla.net/pub/firefox/releases/137.0b4/linux-x86_64/en-US/firefox-137.0b4.tar.xz",
       "hash": "sha512-55JUpv0kvH3JrIzqpL4sUyoC48sogEKQyqkp5dTPpLmJNA2rYT84aOJy6FEIzr9v3XJdVOQOZtaTv44cvzXlfw=="
     },
+    "devedition": {
+      "version": "137.0b4",
+      "url": "https://download.cdn.mozilla.net/pub/firefox/releases/137.0b4/linux-x86_64/en-US/firefox-137.0b4.tar.xz",
+      "hash": "sha512-55JUpv0kvH3JrIzqpL4sUyoC48sogEKQyqkp5dTPpLmJNA2rYT84aOJy6FEIzr9v3XJdVOQOZtaTv44cvzXlfw=="
+    },
     "nightly": {
       "version": "138.0a1",
       "url": "https://archive.mozilla.org/pub/firefox/nightly/2025/03/2025-03-11-21-27-27-mozilla-central/firefox-138.0a1.en-US.linux-x86_64.tar.xz",
@@ -30,6 +35,11 @@
     },
     "esr": null,
     "beta": {
+      "version": "137.0b4",
+      "url": "https://download.cdn.mozilla.net/pub/firefox/releases/137.0b4/linux-aarch64/en-US/firefox-137.0b4.tar.xz",
+      "hash": "sha512-dFfejPiHb4dpLkk2iTHCNNCQe2TpT96AvP2IX/kkVaqx5MRa4OewmjGT9YA/fLf8ZD11zYFoehGt6aT7ywUJeQ=="
+    },
+    "devedition": {
       "version": "137.0b4",
       "url": "https://download.cdn.mozilla.net/pub/firefox/releases/137.0b4/linux-aarch64/en-US/firefox-137.0b4.tar.xz",
       "hash": "sha512-dFfejPiHb4dpLkk2iTHCNNCQe2TpT96AvP2IX/kkVaqx5MRa4OewmjGT9YA/fLf8ZD11zYFoehGt6aT7ywUJeQ=="

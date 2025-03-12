@@ -78,6 +78,12 @@
             channel = "beta";
           };
 
+          firefox-devedition-bin = mkFirefox {
+            branch = "devedition";
+            name = "Firefox Developer Edition";
+            channel = "developer-edition";
+          };
+
           firefox-nightly-bin = mkFirefox {
             branch = "nightly";
             name = "Firefox Nightly";
