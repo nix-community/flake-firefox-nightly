@@ -61,6 +61,7 @@ let data = (
       release: (fetch_release $versions.LATEST_FIREFOX_VERSION $it.system "tar.xz")
       esr: (fetch_release $versions.FIREFOX_ESR $it.system "tar.bz2")
       beta: (fetch_release $versions.LATEST_FIREFOX_RELEASED_DEVEL_VERSION $it.system "tar.xz")
+      devedition: (fetch_release $versions.FIREFOX_DEVEDITION $it.system "tar.xz")
       nightly: (fetch_nightly $versions.FIREFOX_NIGHTLY $it.system)
     }
   }}
