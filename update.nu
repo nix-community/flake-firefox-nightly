@@ -1,7 +1,7 @@
 #!/usr/bin/env nu
 print -e $"::group::flake-lock-update"
 do {
-  nix flake lock --commit-lock-file
+  nix flake update --commit-lock-file
 }
 print -e $"::endgroup::"
 
