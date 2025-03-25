@@ -1,9 +1,9 @@
 {
   "linux-x86_64": {
     "release": {
-      "version": "136.0.2",
-      "url": "https://download.cdn.mozilla.net/pub/firefox/releases/136.0.2/linux-x86_64/en-US/firefox-136.0.2.tar.xz",
-      "hash": "sha512-22VFKmDsuqfivuYhsltc8RqyiV2evfyNfOnrJXsq6904YE67RyTmFOZ+5OHitRQ7uHmauUV9F9noHu2f8+j1Vg=="
+      "version": "136.0.3",
+      "url": "https://download.cdn.mozilla.net/pub/firefox/releases/136.0.3/linux-x86_64/en-US/firefox-136.0.3.tar.xz",
+      "hash": "sha512-HXOgl3lUkePRxks9r7qh9gpPUstOxuOJBqLH0EZlO2UDPU6nPPLNsftJOOfJQO8FUNo2cPyDHHURWEtLVNtXjw=="
     },
     "esr": {
       "version": "128.8.0esr",
@@ -29,9 +29,9 @@
   },
   "linux-aarch64": {
     "release": {
-      "version": "136.0.2",
-      "url": "https://download.cdn.mozilla.net/pub/firefox/releases/136.0.2/linux-aarch64/en-US/firefox-136.0.2.tar.xz",
-      "hash": "sha512-dy/hvjlg7xzObfAuBr4IOc5tAnBMrPAxj6Hg1LBNAmJ8af3udxPEf72NdMx8C9GRN5U8gB+O0K6YC5UYaqkFBg=="
+      "version": "136.0.3",
+      "url": "https://download.cdn.mozilla.net/pub/firefox/releases/136.0.3/linux-aarch64/en-US/firefox-136.0.3.tar.xz",
+      "hash": "sha512-xVBrC9R8d4B8rsYg0jmZ19mO95snwPO49BPTprYMSqXY/iisY5f0mSuNkuVxW0V9TELfv3i/Kt1vWDc7bCgzuQ=="
     },
     "esr": null,
     "beta": {
