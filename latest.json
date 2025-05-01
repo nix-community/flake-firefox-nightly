@@ -11,20 +11,20 @@
       "hash": "sha512-oW4g185tJgHLMpZQm8Uu9Bo+M/yGf6B/LknVeP5lnDMrSPyFm4muiKoXIF7y07guqX6D1DWZD1x3WEDkiOQVZw=="
     },
     "beta": {
-      "version": "139.0b1",
-      "url": "https://download.cdn.mozilla.net/pub/firefox/releases/139.0b1/linux-x86_64/en-US/firefox-139.0b1.tar.xz",
-      "hash": "sha512-SAIrBGvRSGlwLeXwJaqXSJQGW9vOb/cmy1UFCQ8hldTq2Mfn9h4klMkU79xH5rDUtbIUBAUT9XXaeJVDRuNC4Q=="
+      "version": "139.0b2",
+      "url": "https://download.cdn.mozilla.net/pub/firefox/releases/139.0b2/linux-x86_64/en-US/firefox-139.0b2.tar.xz",
+      "hash": "sha512-gERiqgNAWuUwE3jKiTn76WaX6afne6qR2nOAVmAghyaBvxVUV9jHrg1JizwpJoVkKy2K6wlYiVDjqkVRpq2PQg=="
     },
     "devedition": {
-      "version": "139.0b1",
-      "url": "https://download.cdn.mozilla.net/pub/firefox/releases/139.0b1/linux-x86_64/en-US/firefox-139.0b1.tar.xz",
-      "hash": "sha512-SAIrBGvRSGlwLeXwJaqXSJQGW9vOb/cmy1UFCQ8hldTq2Mfn9h4klMkU79xH5rDUtbIUBAUT9XXaeJVDRuNC4Q=="
+      "version": "139.0b2",
+      "url": "https://download.cdn.mozilla.net/pub/firefox/releases/139.0b2/linux-x86_64/en-US/firefox-139.0b2.tar.xz",
+      "hash": "sha512-gERiqgNAWuUwE3jKiTn76WaX6afne6qR2nOAVmAghyaBvxVUV9jHrg1JizwpJoVkKy2K6wlYiVDjqkVRpq2PQg=="
     },
     "nightly": {
       "version": "140.0a1",
-      "url": "https://archive.mozilla.org/pub/firefox/nightly/2025/04/2025-04-30-09-25-15-mozilla-central/firefox-140.0a1.en-US.linux-x86_64.tar.xz",
-      "hash": "sha512-upkIUCSBUF1/62YWWQEbZKeVWmNh/7Fn0D8w007xxioq0VZegXxaO3RjMr6T1F3B8UA7iEiPMGqt4WMerHiQLA==",
-      "date": "2025-04-30T09:25:15Z"
+      "url": "https://archive.mozilla.org/pub/firefox/nightly/2025/04/2025-04-30-20-49-53-mozilla-central/firefox-140.0a1.en-US.linux-x86_64.tar.xz",
+      "hash": "sha512-ziO+HY1gSTTlBdoyqdv1tjPbd6wwZq6xxSzO/l/LJ3VvSNFnmpEvQS7cPYwNigbrqjt1TopL12M49Vv8YQ4GXw==",
+      "date": "2025-04-30T20:49:53Z"
     }
   },
   "linux-aarch64": {
@@ -35,14 +35,14 @@
     },
     "esr": null,
     "beta": {
-      "version": "139.0b1",
-      "url": "https://download.cdn.mozilla.net/pub/firefox/releases/139.0b1/linux-aarch64/en-US/firefox-139.0b1.tar.xz",
-      "hash": "sha512-Ywa4jeBPbOr7Cj72TR6H03L/9evmyNbl8vAUT45Fkfb8fZ+8dlmLzqxv5b6LvDMveM6lMI1vCAIM4srDoLpi3w=="
+      "version": "139.0b2",
+      "url": "https://download.cdn.mozilla.net/pub/firefox/releases/139.0b2/linux-aarch64/en-US/firefox-139.0b2.tar.xz",
+      "hash": "sha512-6vzPu1Q9kMYwzUybU6akvtwWQCfM6ZiEuDV7GAYKFdTObnWxQO2ftHffrvIzg7Twx8dsLPw27ZdtKZrt2VSjcA=="
     },
     "devedition": {
-      "version": "139.0b1",
-      "url": "https://download.cdn.mozilla.net/pub/firefox/releases/139.0b1/linux-aarch64/en-US/firefox-139.0b1.tar.xz",
-      "hash": "sha512-Ywa4jeBPbOr7Cj72TR6H03L/9evmyNbl8vAUT45Fkfb8fZ+8dlmLzqxv5b6LvDMveM6lMI1vCAIM4srDoLpi3w=="
+      "version": "139.0b2",
+      "url": "https://download.cdn.mozilla.net/pub/firefox/releases/139.0b2/linux-aarch64/en-US/firefox-139.0b2.tar.xz",
+      "hash": "sha512-6vzPu1Q9kMYwzUybU6akvtwWQCfM6ZiEuDV7GAYKFdTObnWxQO2ftHffrvIzg7Twx8dsLPw27ZdtKZrt2VSjcA=="
     },
     "nightly": {
       "version": "140.0a1",
