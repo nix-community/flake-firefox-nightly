@@ -11,9 +11,9 @@
       "hash": "sha512-oW4g185tJgHLMpZQm8Uu9Bo+M/yGf6B/LknVeP5lnDMrSPyFm4muiKoXIF7y07guqX6D1DWZD1x3WEDkiOQVZw=="
     },
     "beta": {
-      "version": "139.0b5",
-      "url": "https://download.cdn.mozilla.net/pub/firefox/releases/139.0b5/linux-x86_64/en-US/firefox-139.0b5.tar.xz",
-      "hash": "sha512-Lu7z28ADpFLrmhtfJzou772xTOcRovKFP22Ei4XWtF/Wz8LtTidA1v6hdBFMiCJckem3U5MvMT6V85I0GIoyBQ=="
+      "version": "139.0b6",
+      "url": "https://download.cdn.mozilla.net/pub/firefox/releases/139.0b6/linux-x86_64/en-US/firefox-139.0b6.tar.xz",
+      "hash": "sha512-Obw4FIx1QVNsbu1OkZ6ciHOHspbZEY7jd8QO43Ip2Av/5Wr92teFZjS2ARx/p99udaCfVtC2iOCKl6bhTfxb3Q=="
     },
     "devedition": {
       "version": "139.0b6",
@@ -35,9 +35,9 @@
     },
     "esr": null,
     "beta": {
-      "version": "139.0b5",
-      "url": "https://download.cdn.mozilla.net/pub/firefox/releases/139.0b5/linux-aarch64/en-US/firefox-139.0b5.tar.xz",
-      "hash": "sha512-vB6QKC3pZapS8aYjbSw9e0OmiExrs0llCUiV0Ucbr8roeLcxujuHg/g3SHfWMohC3iJ/rhhHz8e5QscPE/9NpA=="
+      "version": "139.0b6",
+      "url": "https://download.cdn.mozilla.net/pub/firefox/releases/139.0b6/linux-aarch64/en-US/firefox-139.0b6.tar.xz",
+      "hash": "sha512-FAnQqngeqNS2ozNlnwVNPRRYcn13si2YZckHZSmwjfQAKk5KjNTPCH7gWXUPDT4Pb4QObBpXnhicwWQpzOTIpw=="
     },
     "devedition": {
       "version": "139.0b6",
