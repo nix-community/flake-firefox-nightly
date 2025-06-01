@@ -99,7 +99,10 @@
     // (lib.flake-utils.eachSystem supportedSystems (
       system:
       let
-        pkgs = import inputs.nixpkgs { inherit system; };
+        pkgs = import inputs.nixpkgs {
+          inherit system;
+          config.allowUnfree = true;
+        };
 
         firefoxPkgs = overlay pkgs pkgs;
 
