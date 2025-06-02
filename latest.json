@@ -11,9 +11,9 @@
       "hash": "sha512-4nP1K+ePgKhHoPV91e4NDw0MAZluomVyeXn0GZ8cssBAKXuSP/tnvJH+qY4Gl+WM8qxyRH0f7y5B/w3NCLHIvQ=="
     },
     "beta": {
-      "version": "140.0b3",
-      "url": "https://download.cdn.mozilla.net/pub/firefox/releases/140.0b3/linux-x86_64/en-US/firefox-140.0b3.tar.xz",
-      "hash": "sha512-y7Ehwi4AvgJQi5iN+x7KiOOKcCQwqSG+BTa3KOu9aHj0r6y42Rh97IoDhtfhi2QfEvUxu+u8NnruwGS6i1Me5Q=="
+      "version": "140.0b4",
+      "url": "https://download.cdn.mozilla.net/pub/firefox/releases/140.0b4/linux-x86_64/en-US/firefox-140.0b4.tar.xz",
+      "hash": "sha512-t/jUQBaw/2NUoot2PG6gEWkJGod7SwGm2pw69t33rjlFdF4bLvDwwQAkgfBLbI2E4zu/WLnK7tu6WAZOiYXk1w=="
     },
     "devedition": {
       "version": "140.0b3",
@@ -35,9 +35,9 @@
     },
     "esr": null,
     "beta": {
-      "version": "140.0b3",
-      "url": "https://download.cdn.mozilla.net/pub/firefox/releases/140.0b3/linux-aarch64/en-US/firefox-140.0b3.tar.xz",
-      "hash": "sha512-EOuTHC4yCa2WoNlfyzijIsDNoA1eaL9CZ0xDTUD05Q59NnOQVwEyE7yb2GSuiBC5HgA5PAZ8UpQpRn1eTsnBjg=="
+      "version": "140.0b4",
+      "url": "https://download.cdn.mozilla.net/pub/firefox/releases/140.0b4/linux-aarch64/en-US/firefox-140.0b4.tar.xz",
+      "hash": "sha512-smqhf9u5zmIPXKbJSotxsx8uW9FO8tZ+8n7JsIz3h2oVj/5HuZ+gBbSYatKt6n0QWXPT1O/M4s5smkN1CcOG2Q=="
     },
     "devedition": {
       "version": "140.0b3",
