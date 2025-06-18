@@ -37,14 +37,16 @@
 
               # compatibility with nixpkgs 24.11 and 25.05
               pr377863 = lib.functionArgs final.firefox-bin-unwrapped.override ? "applicationName";
+              pr414510 = !lib.functionArgs final.firefox-bin-unwrapped.override ? "channel";
 
               unwrapped =
                 if isNull data then
                   throw "${name} is not available on ${system}!"
                 else
                   (final.firefox-bin-unwrapped.override ({
-                    inherit channel;
                     generated.version = data.version;
+                  } // lib.optionalAttrs (!pr414510) {
+                    inherit channel;
                   } // lib.optionalAttrs pr377863 {
                     applicationName = name;
                   })).overrideAttrs
