@@ -35,29 +35,20 @@
 
               data = versions.${mozSystem}.${branch};
 
-              # compatibility with nixpkgs 24.11 and 25.05
-              pr377863 = lib.functionArgs final.firefox-bin-unwrapped.override ? "applicationName";
-
               unwrapped =
                 if isNull data then
                   throw "${name} is not available on ${system}!"
                 else
-                  (final.firefox-bin-unwrapped.override ({
-                    inherit channel;
-                    generated.version = data.version;
-                  } // lib.optionalAttrs pr377863 {
-                    applicationName = name;
-                  })).overrideAttrs
-                    {
-                      src = final.fetchurl {
-                        inherit (data) url hash;
-                      };
+                  final.callPackage (import ./package.nix {
+                    inherit name branch;
+                    version = data.version;
+                    src = final.fetchurl {
+                      inherit (data) url hash;
                     };
+                  }) { };
             in
             final.wrapFirefox unwrapped ({
               pname = "${unwrapped.binaryName}-bin";
-            } // lib.optionalAttrs (!pr377863) {
-              desktopName = name;
             });
         in
         {
@@ -90,7 +81,10 @@
           };
         };
 
-      supportedSystems = [ "x86_64-linux" "aarch64-linux" ];
+      supportedSystems = [
+        "x86_64-linux"
+        "aarch64-linux"
+      ];
 
     in
     {
