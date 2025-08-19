@@ -1,9 +1,9 @@
 {
   "linux-x86_64": {
     "release": {
-      "version": "141.0.3",
-      "url": "https://download.cdn.mozilla.net/pub/firefox/releases/141.0.3/linux-x86_64/en-US/firefox-141.0.3.tar.xz",
-      "hash": "sha512-h6Bvu6QTicjWjASgyiBZY/pfwFUr9eHyv/7epNvzgbEWtOvpIFc7kODeVDwbS3WPOM/F6ZIZdLNzFvqVez6CWw=="
+      "version": "142.0",
+      "url": "https://download.cdn.mozilla.net/pub/firefox/releases/142.0/linux-x86_64/en-US/firefox-142.0.tar.xz",
+      "hash": "sha512-XpYA41olqthC/G2g6fYtbrg6u1ffEeiS9DDsyjP53pWnGT2e7ef1H/AggqISgEDR2hO4Z9RBJXsRs6Tt+TBpwA=="
     },
     "esr": {
       "version": "128.13.0esr",
@@ -22,16 +22,16 @@
     },
     "nightly": {
       "version": "144.0a1",
-      "url": "https://archive.mozilla.org/pub/firefox/nightly/2025/08/2025-08-18-21-39-14-mozilla-central/firefox-144.0a1.en-US.linux-x86_64.tar.xz",
-      "hash": "sha512-/4amGLki3E+pxcgnccTe2Vyp6uwQCrdH3RRodUk1J6/xYBgSrTYmrVQ9cABEOo8QzEWZH07EjlRPiytWoYu7aw==",
-      "date": "2025-08-18T21:39:14Z"
+      "url": "https://archive.mozilla.org/pub/firefox/nightly/2025/08/2025-08-19-09-08-10-mozilla-central/firefox-144.0a1.en-US.linux-x86_64.tar.xz",
+      "hash": "sha512-wjrIHFuUD5vdZ6Jo1Q+iA0NJ7rNeQYMOb5Xk1e1Yl7SIR1Et9mM0Q8zvCLcN+NFwgXFdzezXe6VnC4ti6y339Q==",
+      "date": "2025-08-19T09:08:10Z"
     }
   },
   "linux-aarch64": {
     "release": {
-      "version": "141.0.3",
-      "url": "https://download.cdn.mozilla.net/pub/firefox/releases/141.0.3/linux-aarch64/en-US/firefox-141.0.3.tar.xz",
-      "hash": "sha512-uS6XQ4GNGHAp5Jc2e0OiH2I3by27ykIYN0xNmlrDLv28yRwtSK0T9ECWchZ0lmx1jqtfUI9NuKDC0LBKZvlWFA=="
+      "version": "142.0",
+      "url": "https://download.cdn.mozilla.net/pub/firefox/releases/142.0/linux-aarch64/en-US/firefox-142.0.tar.xz",
+      "hash": "sha512-dIZdWpptXl9vcRtuux+RysmggGSwZWWqELPmAyyXF4810mYwrXb2iBUZvk7WufwluUx0mS24zexpJY3oj13sjw=="
     },
     "esr": null,
     "beta": {
