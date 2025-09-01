@@ -70,8 +70,14 @@ stdenv.mkDerivation {
     mkdir -p "$prefix/lib/firefox-bin-${version}"
     cp -r * "$prefix/lib/firefox-bin-${version}"
 
+    # wrapFirefox requires the firefox executables in /lib to have the same names as the ones in /bin, otherwise it will
+	# symlink the binary in /lib instead of copying, which breaks things resolved relative to the binary, like policies.
+    # see: https://github.com/NixOS/nixpkgs/blob/d7600c77/pkgs/applications/networking/browsers/firefox/wrapper.nix#L379-L390
+    mv "$prefix/lib/firefox-bin-${version}/firefox" "$prefix/lib/firefox-bin-${version}/${binaryName}"
+    mv "$prefix/lib/firefox-bin-${version}/firefox-bin" "$prefix/lib/firefox-bin-${version}/${binaryName}-bin"
+
     mkdir -p "$out/bin"
-    ln -s "$prefix/lib/firefox-bin-${version}/firefox" "$out/bin/${binaryName}"
+    ln -s "$prefix/lib/firefox-bin-${version}/${binaryName}" "$out/bin/${binaryName}"
 
     # See: https://github.com/mozilla/policy-templates/blob/master/README.md
     mkdir -p "$out/lib/firefox-bin-${version}/distribution";
