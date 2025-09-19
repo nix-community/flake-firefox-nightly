@@ -23,7 +23,7 @@ def fetch_release (version: string, system: string, extension: string) {
       version: $version,
       url: $"($base)/($filename)",
       hash: (to_sri $hash)
-    }  
+    }
   } else {
     return null
   }
@@ -32,7 +32,7 @@ def fetch_release (version: string, system: string, extension: string) {
 def fetch_nightly (version: string, system: string) {
   let product = $"firefox-($version).en-US.($system)";
   let data = http get $"https://download.cdn.mozilla.net/pub/firefox/nightly/latest-mozilla-central/($product).buildhub.json";
-  
+
   let url = $data.download.url
 
   let hash = (
@@ -59,7 +59,7 @@ let data = (
     system: $it.system,
     data: {
       release: (fetch_release $versions.LATEST_FIREFOX_VERSION $it.system "tar.xz")
-      esr: (fetch_release $versions.FIREFOX_ESR $it.system "tar.bz2")
+      esr: (fetch_release $versions.FIREFOX_ESR $it.system "tar.xz")
       beta: (fetch_release $versions.LATEST_FIREFOX_RELEASED_DEVEL_VERSION $it.system "tar.xz")
       devedition: (fetch_release $versions.FIREFOX_DEVEDITION $it.system "tar.xz")
       nightly: (fetch_nightly $versions.FIREFOX_NIGHTLY $it.system)
