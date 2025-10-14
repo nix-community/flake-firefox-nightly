@@ -1,14 +1,14 @@
 {
   "linux-x86_64": {
     "release": {
-      "version": "143.0.4",
-      "url": "https://download.cdn.mozilla.net/pub/firefox/releases/143.0.4/linux-x86_64/en-US/firefox-143.0.4.tar.xz",
-      "hash": "sha512-j1BO6pHcUel3Eslpi2/2KWOQSlwN4N/rf8CmdfNS8PS76Q4lhyd2Dn4OihImBsHOeCHnl2bt8qcpUUfxMGrIJg=="
+      "version": "144.0",
+      "url": "https://download.cdn.mozilla.net/pub/firefox/releases/144.0/linux-x86_64/en-US/firefox-144.0.tar.xz",
+      "hash": "sha512-kP5hDjqEvbTudnzY3DIGJBie2oL3V4qPxhLsdJA19QUgSpr+FAkVVA5QEuDvxaoISWPpAMHR5sOgcnkektqyCQ=="
     },
     "esr": {
-      "version": "140.3.1esr",
-      "url": "https://download.cdn.mozilla.net/pub/firefox/releases/140.3.1esr/linux-x86_64/en-US/firefox-140.3.1esr.tar.xz",
-      "hash": "sha512-gtf92ryPEfMgSgGmEbVqi62REn/Y236gZ4xN+zbmGLdk3Ph8BQRdJky/thDsuvTcKPCsr3SkTkN/Kjl6DYbGQg=="
+      "version": "140.4.0esr",
+      "url": "https://download.cdn.mozilla.net/pub/firefox/releases/140.4.0esr/linux-x86_64/en-US/firefox-140.4.0esr.tar.xz",
+      "hash": "sha512-EEI4NdjHGs8Kw1in0BLHF74HD5xmV6UTp9nHuLAnNaiUIWIIV9FiGVnK0DOq1FGARkkDQUWC81p0nUdE8NEETQ=="
     },
     "beta": {
       "version": "145.0b1",
@@ -29,14 +29,14 @@
   },
   "linux-aarch64": {
     "release": {
-      "version": "143.0.4",
-      "url": "https://download.cdn.mozilla.net/pub/firefox/releases/143.0.4/linux-aarch64/en-US/firefox-143.0.4.tar.xz",
-      "hash": "sha512-sEYEnKzjvBX7b8u9iZaf/+i/WQ9VIabs043ad/rufKsf9+GiWKKIGiYx8NUX7amD4vXc+OYgsMAn1akrJHkZvA=="
+      "version": "144.0",
+      "url": "https://download.cdn.mozilla.net/pub/firefox/releases/144.0/linux-aarch64/en-US/firefox-144.0.tar.xz",
+      "hash": "sha512-JVlGTpxCuZq4uFeEeHEMLFjN/IQzGYYUU7W8xw+Ra2/0qCdMsnkA0p6jhoUvrc4exFsTjoRv0QOYQzMDfty8bA=="
     },
     "esr": {
-      "version": "140.3.1esr",
-      "url": "https://download.cdn.mozilla.net/pub/firefox/releases/140.3.1esr/linux-aarch64/en-US/firefox-140.3.1esr.tar.xz",
-      "hash": "sha512-Qhe8rXrjmUhQiG1eBK59xzTY2KzmrkRWyH//QfFvXyTDxuEYqmmcMzy7KmTfi22CqCQV1NePGM875xSzX/FHrg=="
+      "version": "140.4.0esr",
+      "url": "https://download.cdn.mozilla.net/pub/firefox/releases/140.4.0esr/linux-aarch64/en-US/firefox-140.4.0esr.tar.xz",
+      "hash": "sha512-cskyG7rSfLds41r1KAzS+B2kUYCM50zae0O0Um30neq9KaBMRBDZ4uL6AP4Yh2hNt8nrvtEoahfwzPlruWGr0g=="
     },
     "beta": {
       "version": "145.0b1",
