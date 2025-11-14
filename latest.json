@@ -16,9 +16,9 @@
       "hash": "sha512-T8xyyoX8ouUddqDkwnVEjuG3mVxEXfpWTPN/5wpSwgadJqVQDc4rE7ECOsmpBCxeBwnMN/VfaIijgJSnKqb75w=="
     },
     "devedition": {
-      "version": "146.0b2",
-      "url": "https://download.cdn.mozilla.net/pub/firefox/releases/146.0b2/linux-x86_64/en-US/firefox-146.0b2.tar.xz",
-      "hash": "sha512-T8xyyoX8ouUddqDkwnVEjuG3mVxEXfpWTPN/5wpSwgadJqVQDc4rE7ECOsmpBCxeBwnMN/VfaIijgJSnKqb75w=="
+      "version": "146.0b3",
+      "url": "https://download.cdn.mozilla.net/pub/firefox/releases/146.0b3/linux-x86_64/en-US/firefox-146.0b3.tar.xz",
+      "hash": "sha512-V5SjRapfR+TEEs75UzVc3Y+fxKny8VEle5mqNCLYXjJ5ZUNlmSID4Ng5Fu+3gMY9MH9vUKzz6uxA9chcsN4mjw=="
     },
     "nightly": {
       "version": "147.0a1",
@@ -44,9 +44,9 @@
       "hash": "sha512-YqkKZS0njidSbyVQUs/4cEqmPNoDMAodWs/HNpYj4OSvz7tUXfF7XQsV/6NO6wCc4hGHaNniltuo2xuTs37F5Q=="
     },
     "devedition": {
-      "version": "146.0b2",
-      "url": "https://download.cdn.mozilla.net/pub/firefox/releases/146.0b2/linux-aarch64/en-US/firefox-146.0b2.tar.xz",
-      "hash": "sha512-YqkKZS0njidSbyVQUs/4cEqmPNoDMAodWs/HNpYj4OSvz7tUXfF7XQsV/6NO6wCc4hGHaNniltuo2xuTs37F5Q=="
+      "version": "146.0b3",
+      "url": "https://download.cdn.mozilla.net/pub/firefox/releases/146.0b3/linux-aarch64/en-US/firefox-146.0b3.tar.xz",
+      "hash": "sha512-F6ZF+1Ksz6dJDw7mr+vaicZkqoWtCf01H0IgPwEAsGA2DudblxqE1WmXUnnKwQ9tebjKYoiqsKAHnJo23RX53w=="
     },
     "nightly": {
       "version": "147.0a1",
