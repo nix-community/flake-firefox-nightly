@@ -17,8 +17,8 @@
     },
     "devedition": {
       "version": "148.0b8",
-      "url": "https://download.cdn.mozilla.net/pub/devedition/releases/148.0b8/linux-x86_64/en-US/firefox-148.0b8.tar.xz",
-      "hash": "sha512-Y87vBRAfsySpBRvTaBt/XvJv2uol0TyEiGkx9ZGm7PVM7fNVaJif3BRQfjWaESfO16tluGvvfX3PZxInIP/U6w=="
+      "url": "https://download.cdn.mozilla.net/pub/firefox/releases/148.0b8/linux-x86_64/en-US/firefox-148.0b8.tar.xz",
+      "hash": "sha512-6cVp7S61mv+N6YE71iRU7/yp+PvlBTsrZqFvAsby9MHtcciVNRttO0qqBD6nP0OMCGucKTMHkQG8hR65dCHgpw=="
     },
     "nightly": {
       "version": "149.0a1",
@@ -45,8 +45,8 @@
     },
     "devedition": {
       "version": "148.0b8",
-      "url": "https://download.cdn.mozilla.net/pub/devedition/releases/148.0b8/linux-aarch64/en-US/firefox-148.0b8.tar.xz",
-      "hash": "sha512-7VttMkoaY85ftciiJejch6c6LAtCLWPzFvZEsXHgNqzBYmwg1YKQQKZl5XKU9oylY8XhL0L60RYiDNro/RXDmw=="
+      "url": "https://download.cdn.mozilla.net/pub/firefox/releases/148.0b8/linux-aarch64/en-US/firefox-148.0b8.tar.xz",
+      "hash": "sha512-9KTN4Gd6qptlqImEXUKAg6AAQoGVxXDnQZyjyO0b2SmBSuSUhpFZbWYZlL+hXJw42cngZdefPPqqWwhu0ZZpig=="
     },
     "nightly": {
       "version": "149.0a1",
