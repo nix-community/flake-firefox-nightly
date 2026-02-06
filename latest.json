@@ -11,14 +11,14 @@
       "hash": "sha512-2XLZF6pSk+cm8ZS6zr7WWVSXh90xphcav3hZ2AJmLvpkbZKBY6vfhRi2MpWMirlAXdeAe6Ruq8RsmiEplC3G0w=="
     },
     "beta": {
-      "version": "148.0b11",
-      "url": "https://download.cdn.mozilla.net/pub/firefox/releases/148.0b11/linux-x86_64/en-US/firefox-148.0b11.tar.xz",
-      "hash": "sha512-+H6JqJVCauAfHUKoBkkJ3y+vwuiWzUF14SScFFYZVbssNluqYxwOXeKfKtO8qSM2JRG3aKi6Wmcf0tWCV34OwA=="
+      "version": "148.0b12",
+      "url": "https://download.cdn.mozilla.net/pub/firefox/releases/148.0b12/linux-x86_64/en-US/firefox-148.0b12.tar.xz",
+      "hash": "sha512-g2uPoy4u6pRTaoMsHYRijCn6YLNW7bMDe6zAih5FV31hTmh88cd8RvyEldWKrO1Tj9MZ8O3SFN2S1zcKW+YJsg=="
     },
     "devedition": {
-      "version": "148.0b11",
-      "url": "https://download.cdn.mozilla.net/pub/firefox/releases/148.0b11/linux-x86_64/en-US/firefox-148.0b11.tar.xz",
-      "hash": "sha512-+H6JqJVCauAfHUKoBkkJ3y+vwuiWzUF14SScFFYZVbssNluqYxwOXeKfKtO8qSM2JRG3aKi6Wmcf0tWCV34OwA=="
+      "version": "148.0b12",
+      "url": "https://download.cdn.mozilla.net/pub/firefox/releases/148.0b12/linux-x86_64/en-US/firefox-148.0b12.tar.xz",
+      "hash": "sha512-g2uPoy4u6pRTaoMsHYRijCn6YLNW7bMDe6zAih5FV31hTmh88cd8RvyEldWKrO1Tj9MZ8O3SFN2S1zcKW+YJsg=="
     },
     "nightly": {
       "version": "149.0a1",
@@ -39,14 +39,14 @@
       "hash": "sha512-FDOm44ysEdoggIPaNmZJUW/6A3Log86TCCwwhFRoCqpzPpeGMB8Ivz/2suhsuOxqTY3eRcLNrfxJ0y/sQntTuQ=="
     },
     "beta": {
-      "version": "148.0b11",
-      "url": "https://download.cdn.mozilla.net/pub/firefox/releases/148.0b11/linux-aarch64/en-US/firefox-148.0b11.tar.xz",
-      "hash": "sha512-sscnAeDym8tt4LdYiCIbaVheEWkefudtbtsBy9giJrRY6PiDYpPjAvMqlp0g/7oP5a+cFj+nGB/Z/PuDwecscw=="
+      "version": "148.0b12",
+      "url": "https://download.cdn.mozilla.net/pub/firefox/releases/148.0b12/linux-aarch64/en-US/firefox-148.0b12.tar.xz",
+      "hash": "sha512-a6a2oTQbFj+H8Qc8q9MVS++gA82eaCK6KUqyb3iW5XqeYLa/kkNp+YFZJqWfvl+AeN1koGBsa5TFzYCj5BP1Gw=="
     },
     "devedition": {
-      "version": "148.0b11",
-      "url": "https://download.cdn.mozilla.net/pub/firefox/releases/148.0b11/linux-aarch64/en-US/firefox-148.0b11.tar.xz",
-      "hash": "sha512-sscnAeDym8tt4LdYiCIbaVheEWkefudtbtsBy9giJrRY6PiDYpPjAvMqlp0g/7oP5a+cFj+nGB/Z/PuDwecscw=="
+      "version": "148.0b12",
+      "url": "https://download.cdn.mozilla.net/pub/firefox/releases/148.0b12/linux-aarch64/en-US/firefox-148.0b12.tar.xz",
+      "hash": "sha512-a6a2oTQbFj+H8Qc8q9MVS++gA82eaCK6KUqyb3iW5XqeYLa/kkNp+YFZJqWfvl+AeN1koGBsa5TFzYCj5BP1Gw=="
     },
     "nightly": {
       "version": "149.0a1",
