@@ -17,7 +17,7 @@
   curl,
   dbus-glib,
   gtk3,
-  libXtst,
+  libxtst,
   pciutils,
   pipewire,
   adwaita-icon-theme,
@@ -51,7 +51,7 @@ stdenv.mkDerivation {
     adwaita-icon-theme
     alsa-lib
     dbus-glib
-    libXtst
+    libxtst
   ];
 
   runtimeDependencies = [
