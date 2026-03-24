@@ -1,14 +1,14 @@
 {
   "linux-x86_64": {
     "release": {
-      "version": "148.0.2",
-      "url": "https://download.cdn.mozilla.net/pub/firefox/releases/148.0.2/linux-x86_64/en-US/firefox-148.0.2.tar.xz",
-      "hash": "sha512-63aH5cCFEjoV4RkeyvkAaTk4EdaqojrIGhFXQvm/V4LC1J9+yccNX3iMBJHRj1P/B1SdKA71G/NwrpQadf7qFA=="
+      "version": "149.0",
+      "url": "https://download.cdn.mozilla.net/pub/firefox/releases/149.0/linux-x86_64/en-US/firefox-149.0.tar.xz",
+      "hash": "sha512-kxQIoQYV9nAashumNN1O3yffjkkt79fAdqVqfdpRwZf+jksDS4NHMmww+nz2BMgz7v/HVl0KiGf6EWWGxKlTzw=="
     },
     "esr": {
-      "version": "140.8.0esr",
-      "url": "https://download.cdn.mozilla.net/pub/firefox/releases/140.8.0esr/linux-x86_64/en-US/firefox-140.8.0esr.tar.xz",
-      "hash": "sha512-GOqYYBvxf+hliMmcvZARoiYNHt27fF4kHUSq5EqvdlloqYSI/dBAzYU8z6ENOJBNDPvuuUuMtg4nLbb1aLZuQQ=="
+      "version": "140.9.0esr",
+      "url": "https://download.cdn.mozilla.net/pub/firefox/releases/140.9.0esr/linux-x86_64/en-US/firefox-140.9.0esr.tar.xz",
+      "hash": "sha512-GvE6nWfTC9alnvsbV42lCgQ66YWjHu/K/6iZ/APNp1TUfZ449Ul0yo+VCG/UVoQZaEe25azTiebtMefx/0vTLQ=="
     },
     "beta": {
       "version": "149.0b10",
@@ -22,21 +22,21 @@
     },
     "nightly": {
       "version": "151.0a1",
-      "url": "https://archive.mozilla.org/pub/firefox/nightly/2026/03/2026-03-24-00-27-15-mozilla-central/firefox-151.0a1.en-US.linux-x86_64.tar.xz",
-      "hash": "sha512-AU+PBceWUu9At/SjNSQhoC6Lowc3kB2mjipLNkuJKV3CWWXnuBRK3aAB1PH2gwBc80bax8+01ybUhD81zAf1dA==",
-      "date": "2026-03-24T00:27:15Z"
+      "url": "https://archive.mozilla.org/pub/firefox/nightly/2026/03/2026-03-24-09-50-02-mozilla-central/firefox-151.0a1.en-US.linux-x86_64.tar.xz",
+      "hash": "sha512-C3MwXaOcR8jaOSmckaIegDO69ALKGsrdwFBykcuR2Pqh+H4JobbxXxheKppUCfQ2sXIM39TPgguHO+bqi/Cgcw==",
+      "date": "2026-03-24T09:50:02Z"
     }
   },
   "linux-aarch64": {
     "release": {
-      "version": "148.0.2",
-      "url": "https://download.cdn.mozilla.net/pub/firefox/releases/148.0.2/linux-aarch64/en-US/firefox-148.0.2.tar.xz",
-      "hash": "sha512-5YA4YXOBGz95GjdJYiGKgjvFXcliJ6oZV2sWdKVEM1pQdRazKrJCFvdNPdYopMRAnYxc6zWmivgfR97UoL2vxA=="
+      "version": "149.0",
+      "url": "https://download.cdn.mozilla.net/pub/firefox/releases/149.0/linux-aarch64/en-US/firefox-149.0.tar.xz",
+      "hash": "sha512-7I3s2bntDtwX2DVXF/55Rf8pEEuEGEGaPuCdHRhYcp9qIXOHzNBWX7fcjNqJq374f3qNdLaLqpwL2FHtLXUdCA=="
     },
     "esr": {
-      "version": "140.8.0esr",
-      "url": "https://download.cdn.mozilla.net/pub/firefox/releases/140.8.0esr/linux-aarch64/en-US/firefox-140.8.0esr.tar.xz",
-      "hash": "sha512-nKMcuf/8lnogjMBjgL4dP1pnnyynAjHG2rm1PNb/5ml4z+n4ONAtV0Rv/A+d/2jSXDDXsqk8O6sHiXhvJ4sW8w=="
+      "version": "140.9.0esr",
+      "url": "https://download.cdn.mozilla.net/pub/firefox/releases/140.9.0esr/linux-aarch64/en-US/firefox-140.9.0esr.tar.xz",
+      "hash": "sha512-g92494vpWqImfSxcxPiZW0eekGXQs8g05fXH7I/1C63TOo5oOdW1PL2Y5pUJeLGmTG7ut5XB2TIw543JDiR0xQ=="
     },
     "beta": {
       "version": "149.0b10",
@@ -50,9 +50,9 @@
     },
     "nightly": {
       "version": "151.0a1",
-      "url": "https://archive.mozilla.org/pub/firefox/nightly/2026/03/2026-03-24-00-27-15-mozilla-central/firefox-151.0a1.en-US.linux-aarch64.tar.xz",
-      "hash": "sha512-Jdu9Ijj5YMoEhYwS/oQ9d2iDmeQp5LLKp2nq//rnPCilv1PYckFXcL78H35NLxzfLFyxoa6rZidLM7B+7csAoA==",
-      "date": "2026-03-24T00:27:15Z"
+      "url": "https://archive.mozilla.org/pub/firefox/nightly/2026/03/2026-03-24-09-50-02-mozilla-central/firefox-151.0a1.en-US.linux-aarch64.tar.xz",
+      "hash": "sha512-vUp8hIfjDxAaGzikAzYG3yyT5OJlsS/MAEsOs4KHNLshMhRTdyjir1A9S6FW/E12JNFQeC9vxnRSv2beWJuxbg==",
+      "date": "2026-03-24T09:50:02Z"
     }
   }
 }
