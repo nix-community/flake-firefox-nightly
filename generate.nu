@@ -5,8 +5,8 @@ def to_sri (hash: string) {
   return $"sha512-($hash | decode hex | encode base64)"
 }
 
-def fetch_release (version: string, system: string, extension: string) {
-  let base = $"https://download.cdn.mozilla.net/pub/firefox/releases/($version)"
+def fetch (edition: string, version: string, system: string, extension: string) {
+  let base = $"https://download.cdn.mozilla.net/pub/($edition)/releases/($version)"
 
   let filename = $"($system)/en-US/firefox-($version).($extension)"
 
@@ -27,6 +27,14 @@ def fetch_release (version: string, system: string, extension: string) {
   } else {
     return null
   }
+}
+
+def fetch_release (version: string, system: string, extension: string) {
+  return (fetch "firefox" $version $system $extension)
+}
+
+def fetch_devedition (version: string, system: string, extension: string) {
+  return (fetch "devedition" $version $system $extension)
 }
 
 def fetch_nightly (version: string, system: string) {
@@ -61,7 +69,7 @@ let data = (
       release: (fetch_release $versions.LATEST_FIREFOX_VERSION $it.system "tar.xz")
       esr: (fetch_release $versions.FIREFOX_ESR $it.system "tar.xz")
       beta: (fetch_release $versions.LATEST_FIREFOX_RELEASED_DEVEL_VERSION $it.system "tar.xz")
-      devedition: (fetch_release $versions.FIREFOX_DEVEDITION $it.system "tar.xz")
+      devedition: (fetch_devedition $versions.FIREFOX_DEVEDITION $it.system "tar.xz")
       nightly: (fetch_nightly $versions.FIREFOX_NIGHTLY $it.system)
     }
   }}
