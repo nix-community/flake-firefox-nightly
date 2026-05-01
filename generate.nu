@@ -5,8 +5,8 @@ def to_sri (hash: string) {
   return $"sha512-($hash | decode hex | encode base64)"
 }
 
-def fetch_release (version: string, system: string, extension: string) {
-  let base = $"https://download.cdn.mozilla.net/pub/firefox/releases/($version)"
+def fetch (edition: string, version: string, system: string, extension: string) {
+  let base = $"https://download.cdn.mozilla.net/pub/($edition)/releases/($version)"
 
   let filename = $"($system)/en-US/firefox-($version).($extension)"
 
@@ -29,28 +29,12 @@ def fetch_release (version: string, system: string, extension: string) {
   }
 }
 
+def fetch_release (version: string, system: string, extension: string) {
+  return (fetch "firefox" $version $system $extension)
+}
+
 def fetch_devedition (version: string, system: string, extension: string) {
-  let base = $"https://download.cdn.mozilla.net/pub/devedition/releases/($version)"
-
-  let filename = $"($system)/en-US/firefox-($version).($extension)"
-
-  let row = (
-    http get $"($base)/SHA512SUMS"
-    | from ssv -m 1 --noheaders
-    | where column1 == $filename
-  )
-
-  if ($row | is-not-empty) {
-    let hash = $row.column0.0
-
-    return {
-      version: $version,
-      url: $"($base)/($filename)",
-      hash: (to_sri $hash)
-    }
-  } else {
-    return null
-  }
+  return (fetch "devedition" $version $system $extension)
 }
 
 def fetch_nightly (version: string, system: string) {
