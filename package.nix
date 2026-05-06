@@ -18,6 +18,7 @@
   dbus-glib,
   gtk3,
   libxtst,
+  libva,
   pciutils,
   pipewire,
   adwaita-icon-theme,
@@ -57,6 +58,7 @@ stdenv.mkDerivation {
   runtimeDependencies = [
     curl
     pciutils
+    libva.out
   ];
 
   appendRunpaths = [
