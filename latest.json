@@ -11,14 +11,14 @@
       "hash": "sha512-OhKhOp8vSSJOhHrerzAyR45o1+HTkwOdmqsQFgiNIGi4fpm7gNQTXtDq3HOoLJHK1i7rrqMenIY2A81Kut8/TQ=="
     },
     "beta": {
-      "version": "154.0b6",
-      "url": "https://download.cdn.mozilla.net/pub/firefox/releases/154.0b6/linux-x86_64/en-US/firefox-154.0b6.tar.xz",
-      "hash": "sha512-gc82ShZ8597eJ0Peqzn3R0bC06rn+T5Un9gFGdFu2uYGelXTBFZDgm0BQRUsgYp36A3PHvLp+yB/WjYxA+vjiw=="
+      "version": "154.0b7",
+      "url": "https://download.cdn.mozilla.net/pub/firefox/releases/154.0b7/linux-x86_64/en-US/firefox-154.0b7.tar.xz",
+      "hash": "sha512-pPKHP0pHI+UIaeaD8rFsuIkJdEfXmp+xHQbeZFHGhUVAN9+9yZhRdoyCOk62nLudqrSesJDiUJC00MGGk3vxXA=="
     },
     "devedition": {
-      "version": "154.0b6",
-      "url": "https://download.cdn.mozilla.net/pub/devedition/releases/154.0b6/linux-x86_64/en-US/firefox-154.0b6.tar.xz",
-      "hash": "sha512-PQ4LEA1nLBpYLh3FX5/W7ELG58s/5BIjhc2ZO1AD1XkPIQtU4z8moSGaBX+sSmm5PpcfbZLcIErRlvG4V850aA=="
+      "version": "154.0b7",
+      "url": "https://download.cdn.mozilla.net/pub/devedition/releases/154.0b7/linux-x86_64/en-US/firefox-154.0b7.tar.xz",
+      "hash": "sha512-FYBqjcq9mmcy+sWZEA6enBzgssGkS6/HLEjCBmv0P1CVVtaQLbG3irhbwHaYlWOqp/DcGpePkcazhFYsSpBkAA=="
     },
     "nightly": {
       "version": "155.0a1",
@@ -39,14 +39,14 @@
       "hash": "sha512-TWWVzjebVjD5jjDmTDUnTXfHixQ/+9UtrYi+nndWa/tdrGNm92ytKP9Juhzh90yxi/x8oQ3n75Gs0CslNhjQ/w=="
     },
     "beta": {
-      "version": "154.0b6",
-      "url": "https://download.cdn.mozilla.net/pub/firefox/releases/154.0b6/linux-aarch64/en-US/firefox-154.0b6.tar.xz",
-      "hash": "sha512-y8YAp5iF96RatRghoxD5LwXGiJ+936SxsiCZQiaW1uMj/S6XCxI4lk3PsPA4ZehjWxDMcbbJEMZZZHbUgSfy7w=="
+      "version": "154.0b7",
+      "url": "https://download.cdn.mozilla.net/pub/firefox/releases/154.0b7/linux-aarch64/en-US/firefox-154.0b7.tar.xz",
+      "hash": "sha512-+uv7NtOth6aNpcUzK+yNmg57Xgms4/QkrEV+PezDzln6kO3ShvK1GkgAmHq28uVYrkw+CrHSex2u99YjYBZx4Q=="
     },
     "devedition": {
-      "version": "154.0b6",
-      "url": "https://download.cdn.mozilla.net/pub/devedition/releases/154.0b6/linux-aarch64/en-US/firefox-154.0b6.tar.xz",
-      "hash": "sha512-oODVh0hSSHRAJUe40NrWTqN1zA3sLpnEC0okLaLxXGU68YYOsmZngtr2jEpioD6sv9oWh/DKB5vkqXnqA3ivYg=="
+      "version": "154.0b7",
+      "url": "https://download.cdn.mozilla.net/pub/devedition/releases/154.0b7/linux-aarch64/en-US/firefox-154.0b7.tar.xz",
+      "hash": "sha512-efb+Ju2xxfwE4vhp2CugsVeC3FFuSfjEH6O4I+GtKK5bdf2OltIQrW2OQ4X2+8LHCWBP0FeELffTHczqtd6R8g=="
     },
     "nightly": {
       "version": "155.0a1",
