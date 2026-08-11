@@ -1,9 +1,9 @@
 {
   "linux-x86_64": {
     "release": {
-      "version": "153.0.3",
-      "url": "https://download.cdn.mozilla.net/pub/firefox/releases/153.0.3/linux-x86_64/en-US/firefox-153.0.3.tar.xz",
-      "hash": "sha512-SsdsNa1nULxZn+vOh7u993PG4ARIvNw1+FTALYuDCKnvcw66nGm07KxekLppBZpFxoQLqKp/5mcjWeALPVK/zQ=="
+      "version": "153.0.4",
+      "url": "https://download.cdn.mozilla.net/pub/firefox/releases/153.0.4/linux-x86_64/en-US/firefox-153.0.4.tar.xz",
+      "hash": "sha512-Pq0j+luUHfXJSTDvHPH/c6NFLsKBWF8/po5z/He4c4aZNbJ8bHK/DC0I8ryP08yRhhwlEwxtDfQApbAzDP3Cvg=="
     },
     "esr": {
       "version": "140.13.0esr",
@@ -29,9 +29,9 @@
   },
   "linux-aarch64": {
     "release": {
-      "version": "153.0.3",
-      "url": "https://download.cdn.mozilla.net/pub/firefox/releases/153.0.3/linux-aarch64/en-US/firefox-153.0.3.tar.xz",
-      "hash": "sha512-1z/AlzGrID9kfDJYdt5jdEio96JXVA4+8gpiqIlw9aAeooRIJphosMG7jjC/FrORwDC6ZcN4CG3acQwcBGqjMw=="
+      "version": "153.0.4",
+      "url": "https://download.cdn.mozilla.net/pub/firefox/releases/153.0.4/linux-aarch64/en-US/firefox-153.0.4.tar.xz",
+      "hash": "sha512-8gStv9YVW04cZfw1/pfo/9a5PHdtCYgdUvRkJj1ijER4sKPKMFIkMCRz2DwJeVBv897nkxZlDe+nrbGTK3CpHA=="
     },
     "esr": {
       "version": "140.13.0esr",
