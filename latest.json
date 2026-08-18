@@ -6,9 +6,9 @@
       "hash": "sha512-Pq0j+luUHfXJSTDvHPH/c6NFLsKBWF8/po5z/He4c4aZNbJ8bHK/DC0I8ryP08yRhhwlEwxtDfQApbAzDP3Cvg=="
     },
     "esr": {
-      "version": "140.13.0esr",
-      "url": "https://download.cdn.mozilla.net/pub/firefox/releases/140.13.0esr/linux-x86_64/en-US/firefox-140.13.0esr.tar.xz",
-      "hash": "sha512-OhKhOp8vSSJOhHrerzAyR45o1+HTkwOdmqsQFgiNIGi4fpm7gNQTXtDq3HOoLJHK1i7rrqMenIY2A81Kut8/TQ=="
+      "version": "140.14.0esr",
+      "url": "https://download.cdn.mozilla.net/pub/firefox/releases/140.14.0esr/linux-x86_64/en-US/firefox-140.14.0esr.tar.xz",
+      "hash": "sha512-U8Zn3tVPAESFUHLHtmMz1lZr65EXgAm7/hCnIg16vYi1gMsohCaemKE1hgdZBrdsBHpzVEIDuTMllXI3/1k5mw=="
     },
     "beta": {
       "version": "155.0b1",
@@ -22,9 +22,9 @@
     },
     "nightly": {
       "version": "156.0a1",
-      "url": "https://archive.mozilla.org/pub/firefox/nightly/2026/08/2026-08-17-21-08-08-mozilla-central/firefox-156.0a1.en-US.linux-x86_64.tar.xz",
-      "hash": "sha512-A8m+6dFc3U4qWqNKa7ao4O1Vt+7zFdNFnVcr5XTGl/HVoCDzLcrd3h4No9KSlHjT0AwvSwiHYDEeD6FskTkdHA==",
-      "date": "2026-08-17T21:08:08Z"
+      "url": "https://archive.mozilla.org/pub/firefox/nightly/2026/08/2026-08-18-09-20-26-mozilla-central/firefox-156.0a1.en-US.linux-x86_64.tar.xz",
+      "hash": "sha512-EppqnrpiWfFTtAGTFV8lCaGDAWyzAiDcl7+RczOEk+mlp+OW20RxB9iyGysLbFezLcaGvy9Jv3DZUs/kykr/9A==",
+      "date": "2026-08-18T09:20:26Z"
     }
   },
   "linux-aarch64": {
@@ -34,9 +34,9 @@
       "hash": "sha512-8gStv9YVW04cZfw1/pfo/9a5PHdtCYgdUvRkJj1ijER4sKPKMFIkMCRz2DwJeVBv897nkxZlDe+nrbGTK3CpHA=="
     },
     "esr": {
-      "version": "140.13.0esr",
-      "url": "https://download.cdn.mozilla.net/pub/firefox/releases/140.13.0esr/linux-aarch64/en-US/firefox-140.13.0esr.tar.xz",
-      "hash": "sha512-TWWVzjebVjD5jjDmTDUnTXfHixQ/+9UtrYi+nndWa/tdrGNm92ytKP9Juhzh90yxi/x8oQ3n75Gs0CslNhjQ/w=="
+      "version": "140.14.0esr",
+      "url": "https://download.cdn.mozilla.net/pub/firefox/releases/140.14.0esr/linux-aarch64/en-US/firefox-140.14.0esr.tar.xz",
+      "hash": "sha512-tkESLarV4ESeUb4t3kYumtBv2rbiIvukFQLKhC+mIFAeNDfR3pPwD+byRg/tyGw3ZCs4gPfsH0w89Ia3Ab8zZQ=="
     },
     "beta": {
       "version": "155.0b1",
