@@ -6,9 +6,9 @@
       "hash": "sha512-8V+LKBxOrS7zXQtWxZoOrYJVIdckPRbz58NvDCcyEBrh9WTgRKeq0eBMMQ9wBkYR0TQ0+yTQUqZiNWzgaNfT7A=="
     },
     "esr": {
-      "version": "153.5.0esr",
-      "url": "https://download.cdn.mozilla.net/pub/firefox/releases/153.5.0esr/linux-x86_64/en-US/firefox-153.5.0esr.tar.xz",
-      "hash": "sha512-MixMnxdo4UBrrIrhK0B8UEcn83R8LUYu5MerGu5OMIyvg3xtUWunLEC587s+wHvyJDG/svPj8Kvwinl7rq4BwQ=="
+      "version": "153.5.1esr",
+      "url": "https://download.cdn.mozilla.net/pub/firefox/releases/153.5.1esr/linux-x86_64/en-US/firefox-153.5.1esr.tar.xz",
+      "hash": "sha512-paBnAtYeXzx4fLr2Qqbj1einN78YoUEScde8hKeqHEeARS4BgQ9T2oGkD16XddreQ2BITCiCZA6WW+ZKeVNe3Q=="
     },
     "beta": {
       "version": "159.0b4",
@@ -34,9 +34,9 @@
       "hash": "sha512-owMxvM1ZD2dGoretCb/NVzZZKOGLo2MEPk/JmnqN429TbO2/bWkyOsOWd3wpacoPjOBbOa0lDfuTgdawmma6Xg=="
     },
     "esr": {
-      "version": "153.5.0esr",
-      "url": "https://download.cdn.mozilla.net/pub/firefox/releases/153.5.0esr/linux-aarch64/en-US/firefox-153.5.0esr.tar.xz",
-      "hash": "sha512-joY1zNjrewd9hRsi6labHzp82gsUPYEMRSxHJKR5OWeybsX7XO0spel9/c2jJF7LewE+6C4EO8RvbHjXAbxaVA=="
+      "version": "153.5.1esr",
+      "url": "https://download.cdn.mozilla.net/pub/firefox/releases/153.5.1esr/linux-aarch64/en-US/firefox-153.5.1esr.tar.xz",
+      "hash": "sha512-xZITDqlqQoTZRUzbQIPOOeyxb3qqBC6Xg7nsUdj74p2YlWlM902nAOrdWOk8GbBDtarSg14GKALsMo5oZRYMLg=="
     },
     "beta": {
       "version": "159.0b4",
