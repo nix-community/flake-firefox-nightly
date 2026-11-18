@@ -11,20 +11,20 @@
       "hash": "sha512-dCo9vFSIq1AEDv5rB5iqX7w9IsHQ0cFCcY8F3MYCrtdknYfiFZxl9E200meVuj+sYMHcIvl6W1k6tyxVWD8www=="
     },
     "beta": {
-      "version": "161.0b4",
-      "url": "https://download.cdn.mozilla.net/pub/firefox/releases/161.0b4/linux-x86_64/en-US/firefox-161.0b4.tar.xz",
-      "hash": "sha512-J75WdA2qZrXoBgednX1JwrHv7f0r/LBA6m7BCXpJ/m/WgrkO3yIO0K65fqjP30IPBwuhkwmwfykx6M6sO1T/AA=="
+      "version": "161.0b5",
+      "url": "https://download.cdn.mozilla.net/pub/firefox/releases/161.0b5/linux-x86_64/en-US/firefox-161.0b5.tar.xz",
+      "hash": "sha512-lrOtqyYixsLZw6VHVm6TVBdWGoHQjTpoXSiy8lBBlphIfIPUHotT5/RsD9ry5bzvyTCIvVjeSwnUNU6TrqxLJQ=="
     },
     "devedition": {
-      "version": "161.0b4",
-      "url": "https://download.cdn.mozilla.net/pub/devedition/releases/161.0b4/linux-x86_64/en-US/firefox-161.0b4.tar.xz",
-      "hash": "sha512-N0K9bLaK+KBy033UAFfhdG6x5KGxyy4S7R5HXZmvrcdS1VOilv/BwXghRJzbycfT4EuRyaSIKD40V+mHFiAM6Q=="
+      "version": "161.0b5",
+      "url": "https://download.cdn.mozilla.net/pub/devedition/releases/161.0b5/linux-x86_64/en-US/firefox-161.0b5.tar.xz",
+      "hash": "sha512-UrMJLUBYCn8bz/+USpiHCSJRxj+c0uMlcYiZch37RSId856GY9nzP2kbF5I77uAsak/0W0ADmZUbC0nBYHI3Ag=="
     },
     "nightly": {
       "version": "162.0a1",
-      "url": "https://archive.mozilla.org/pub/firefox/nightly/2026/11/2026-11-17-19-33-37-mozilla-central/firefox-162.0a1.en-US.linux-x86_64.tar.xz",
-      "hash": "sha512-se0ZJRoA599WTPcGOilEr0ayCP0et1gaBF9rHm3ExaNLRWh+0e9DhRbfwTHkuH9yOll4f/nxNG9v+Rju60qCKQ==",
-      "date": "2026-11-17T19:33:37Z"
+      "url": "https://archive.mozilla.org/pub/firefox/nightly/2026/11/2026-11-18-09-36-14-mozilla-central/firefox-162.0a1.en-US.linux-x86_64.tar.xz",
+      "hash": "sha512-SYyOg0/qsEy/fG3JBgQsao5EH1fQPXleAdoH7Y5twnqNpO5ntO4gZJEGzHkPg+s5R5E75ReygTEaHINQQe7I8A==",
+      "date": "2026-11-18T09:36:14Z"
     }
   },
   "linux-aarch64": {
@@ -39,20 +39,20 @@
       "hash": "sha512-jBvOeHnNjbGMDD+Qgn8bxKDa3vCIcaK9tIGfp4qPXDXlMRRl3Zr0XlPKJC+ex297nTn5V+oC9EYZJswGf+n7Yw=="
     },
     "beta": {
-      "version": "161.0b4",
-      "url": "https://download.cdn.mozilla.net/pub/firefox/releases/161.0b4/linux-aarch64/en-US/firefox-161.0b4.tar.xz",
-      "hash": "sha512-VYOQlNzJmvX1I3buOeP6hEEEEk8kml4+udTXf8E0uRv3wOd0854dqoxufpOSF9avnt6WSvhWUi2pUUSlC+vHsA=="
+      "version": "161.0b5",
+      "url": "https://download.cdn.mozilla.net/pub/firefox/releases/161.0b5/linux-aarch64/en-US/firefox-161.0b5.tar.xz",
+      "hash": "sha512-UxjtEnRiRXaDGDD3DkKSPMEaJKixMuhxo+27V90I/RFfThnahY7eiOb9BEZDtoEi/Vxi/cqEc57B+eCcoVEcPQ=="
     },
     "devedition": {
-      "version": "161.0b4",
-      "url": "https://download.cdn.mozilla.net/pub/devedition/releases/161.0b4/linux-aarch64/en-US/firefox-161.0b4.tar.xz",
-      "hash": "sha512-EPCn7jNOpvwxbQg+PA7z2uJZ5OZarMeuyk8X6sinkywyiIEyD1vC/9uSvN+Cq4rkoA5OMew7HIas9aFwCVp4jw=="
+      "version": "161.0b5",
+      "url": "https://download.cdn.mozilla.net/pub/devedition/releases/161.0b5/linux-aarch64/en-US/firefox-161.0b5.tar.xz",
+      "hash": "sha512-a7J90AN7dC7Bhn/9jv38EW15MlmNDAHGtGcMA9S7r5bmVPxyGd7dXmmRAhiQrQVejjMIhW2B2iR+fiIH5iEBhw=="
     },
     "nightly": {
       "version": "162.0a1",
-      "url": "https://archive.mozilla.org/pub/firefox/nightly/2026/11/2026-11-17-19-33-37-mozilla-central/firefox-162.0a1.en-US.linux-aarch64.tar.xz",
-      "hash": "sha512-+MR5HVCj3L/NUPQkGhjbwNpiFGno8QJSmq+Syt10wbMriNHrp0kckmGXll/Za8fESp2zd6IO5ENyhXQXiTz5GA==",
-      "date": "2026-11-17T19:33:37Z"
+      "url": "https://archive.mozilla.org/pub/firefox/nightly/2026/11/2026-11-18-09-36-14-mozilla-central/firefox-162.0a1.en-US.linux-aarch64.tar.xz",
+      "hash": "sha512-3TX44/W36NOmEAdlmMX7hOfe99Zm9EotCwwUugdo6YzRJ9HaGA3DF3NeojDgWX6jAxnSxnnS+gAtXjSvOrM17g==",
+      "date": "2026-11-18T09:36:14Z"
     }
   }
 }
